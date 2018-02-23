@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 11 22:11:20 2018
+# Process ID: 13280
+# Current directory: C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/synth_2
+# Command line: vivado.exe -log voting_machine_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source voting_machine_fpga.tcl
+# Log file: C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/synth_2/voting_machine_fpga.vds
+# Journal file: C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source voting_machine_fpga.tcl -notrace

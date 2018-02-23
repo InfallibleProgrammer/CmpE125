@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Feb 10 22:12:03 2018
+# Process ID: 12804
+# Current directory: C:/Users/avach/Documents/Xilinix Projects/and_or
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3248 C:\Users\avach\Documents\Xilinix Projects\and_or\and_or.xpr
+# Log file: C:/Users/avach/Documents/Xilinix Projects/and_or/vivado.log
+# Journal file: C:/Users/avach/Documents/Xilinix Projects/and_or\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/avach/Documents/Xilinix Projects/and_or/and_or.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/avach/Documents/Xilinix Projects/and_or/tb_and_or_behav.wcfg}
+source tb_and_or.tcl

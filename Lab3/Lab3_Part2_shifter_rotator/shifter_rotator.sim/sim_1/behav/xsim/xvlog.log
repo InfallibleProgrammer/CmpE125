@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Downloads/shifter_rotator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter_rotator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Downloads/tb_shifter_rotator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_shifter_rotator

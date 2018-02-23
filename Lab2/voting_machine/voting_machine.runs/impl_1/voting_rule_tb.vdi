@@ -1,0 +1,203 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 11 22:05:23 2018
+# Process ID: 1836
+# Current directory: C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_1
+# Command line: vivado.exe -log voting_rule_tb.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source voting_rule_tb.tcl -notrace
+# Log file: C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_1/voting_rule_tb.vdi
+# Journal file: C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source voting_rule_tb.tcl -notrace
+Command: link_design -top voting_rule_tb -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk100MHz'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '*'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:2]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "clk100MHz"
+ [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'C'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[0]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[1]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[2]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[3]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[4]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[5]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[6]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[7]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[0]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[1]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[2]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[3]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[4]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[5]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[6]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[7]'. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/constrs_1/new/voting_machine_fpga.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+5 Infos, 22 Warnings, 22 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 561.691 ; gain = 325.848
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 563.004 ; gain = 1.313
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 6247b0ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1045.945 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 6247b0ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1045.945 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 6247b0ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1045.945 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 6247b0ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1045.945 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 6247b0ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1045.945 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1045.945 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 6247b0ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1045.945 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 6247b0ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1045.945 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+20 Infos, 22 Warnings, 22 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1045.945 ; gain = 484.254
+INFO: [Common 17-1381] The checkpoint 'C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_1/voting_rule_tb_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file voting_rule_tb_drc_opted.rpt -pb voting_rule_tb_drc_opted.pb -rpx voting_rule_tb_drc_opted.rpx
+Command: report_drc -file voting_rule_tb_drc_opted.rpt -pb voting_rule_tb_drc_opted.pb -rpx voting_rule_tb_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_1/voting_rule_tb_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1066.953 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1066.953 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1066.953 ; gain = 0.000
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1066.953 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 22 Warnings, 22 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 11 22:05:51 2018...
