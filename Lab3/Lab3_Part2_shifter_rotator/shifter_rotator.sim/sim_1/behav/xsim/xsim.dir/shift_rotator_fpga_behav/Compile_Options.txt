@@ -1,1 +1,0 @@
--wto "af8e56db727d47a79bfbee6db3a18f43" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "shift_rotator_fpga_behav" "xil_defaultlib.shift_rotator_fpga" "xil_defaultlib.glbl" -log "elaborate.log" 
