@@ -12,25 +12,25 @@ module alu(
 
 always@(*)
 begin
-	
+
 	overflow = 0;
 
 	case(ctrl)
 		3'b100: 
 			begin
 				result = a - 1;
-				assign overflow = (a == 4'b1111);
+				overflow = (a == 4'b1111);
 			end
 		3'b101:
 			begin
 				result = a + b;
 				if ((a[3] == 0) && (b[3] == 0))
 				begin
-					assign overflow = (result[3] != 0);
+					overflow = (result[3] != 0);
 				end
 				else if ((a[3] == 1) && (a[3] == 1))
 				begin
-					assign overflow = (result[3] != 1);
+					overflow = (result[3] != 1);
 				end
 			end
 		3'b110:
@@ -38,11 +38,11 @@ begin
 				result = a - b;
 				if ((a[3] == 0) && (b[3] == 1))
 				begin
-					assign overflow = (result[3] != 0);
+					overflow = (result[3] != 0);
 				end
 				else if ((a[3] == 1) && (a[3] == 0))
 				begin
-					assign overflow = (result[3] != 1);
+					overflow = (result[3] != 1);
 				end
 			end
 		3'b111: result = a + 1;
@@ -52,7 +52,7 @@ begin
 		3'b011: result = a | b;
 	endcase
 	
-	assign zero = (result == 4'b0000);
+	zero = (result == 4'b0000);
 
 end
 

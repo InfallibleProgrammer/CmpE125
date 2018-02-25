@@ -38,11 +38,11 @@ module tb_alu();
 	integer       error = 0;
 
 	alu DUT(
-		.a        (a)
-		.b        (b)
+		.a        (a),
+		.b        (b),
 		.ctrl     (ctrl),
-		.result   (result)
-		.zero     (zero)
+		.result   (result),
+		.zero     (zero),
 		.overflow (overflow)
 		);
 
