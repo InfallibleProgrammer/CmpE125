@@ -44,23 +44,23 @@ module tb_shifter_rotator();
 			#5
 				for (i_data_in = 0; i_data_in < 16; i_data_in = i_data_in + 1)
 					begin
-						#5
 						data_in = i_data_in;
 						case(ctrl_in)
-							8'd0: tb_data_out = data_in;
-							8'd1: tb_data_out = {1'b0, data_in[3:1]};
-							8'd2: tb_data_out = {2'b00, data_in[3:2]};
-							8'd3: tb_data_out = {3'b000, data_in[3]};
-							8'd4: tb_data_out = {4'b0000};
-							8'd5: tb_data_out = {data_in[0], data_in[3:1]};
-							8'd6: tb_data_out = {data_in[1:0], data_in[3:2]};
-							8'd7: tb_data_out = {data_in[2:0], data_in[3]};
+							0: tb_data_out = data_in;
+							1: tb_data_out = {1'b0, data_in[3:1]};
+							2: tb_data_out = {2'b00, data_in[3:2]};
+							3: tb_data_out = {3'b000, data_in[3]};
+							4: tb_data_out = {4'b0000};
+							5: tb_data_out = {data_in[0], data_in[3:1]};
+							6: tb_data_out = {data_in[1:0], data_in[3:2]};
+							7: tb_data_out = {data_in[2:0], data_in[3]};
 						endcase // i_ctrl_in
-
+						#5
 						if (tb_data_out != data_out)
 						begin
 							error = error + 1;
 							$display("Error: with input %d on control %d", data_in, ctrl_in);
+							$display("tb_data_out: %d ______ data_out: %d", tb_data_out, data_out);
 						end
 					end
 			end
