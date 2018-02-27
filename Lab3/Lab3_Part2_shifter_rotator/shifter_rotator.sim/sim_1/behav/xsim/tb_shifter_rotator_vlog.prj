@@ -1,6 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../../../../../Downloads/shifter_rotator.v" \
+"../../../../shifter_rotator.srcs/sources_1/new/shifter_rotator.v" \
 "../../../../../../../../../Downloads/tb_shifter_rotator.v" \
 
 # compile glbl module
