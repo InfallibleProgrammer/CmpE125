@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Mon Feb 26 15:43:15 2018
+# Process ID: 14188
+# Current directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part3_alu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8376 C:\Users\avach\Documents\GitHub\CmpE125\Lab3\Lab3_Part3_alu\alu.xpr
+# Log file: C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part3_alu/vivado.log
+# Journal file: C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part3_alu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part3_alu/alu.xpr
+update_compile_order -fileset sources_1

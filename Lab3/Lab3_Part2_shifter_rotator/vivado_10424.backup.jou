@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sun Feb 25 19:04:41 2018
+# Process ID: 10424
+# Current directory: C:/Users/avach/Documents/XilinixProjects/shifter_rotator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15104 C:\Users\avach\Documents\XilinixProjects\shifter_rotator\shifter_rotator.xpr
+# Log file: C:/Users/avach/Documents/XilinixProjects/shifter_rotator/vivado.log
+# Journal file: C:/Users/avach/Documents/XilinixProjects/shifter_rotator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/avach/Documents/XilinixProjects/shifter_rotator/shifter_rotator.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/avach/Downloads/shifter_rotator.v C:/Users/avach/Downloads/shift_rotator_fpga.v C:/Users/avach/Downloads/tb_shifter_rotator.v}

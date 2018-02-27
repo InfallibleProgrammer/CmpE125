@@ -2,25 +2,242 @@
 # Vivado v2017.4.1 (64-bit)
 # SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
 # IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
-# Start of session at: Sun Feb 25 19:04:41 2018
-# Process ID: 10424
-# Current directory: C:/Users/avach/Documents/XilinixProjects/shifter_rotator
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15104 C:\Users\avach\Documents\XilinixProjects\shifter_rotator\shifter_rotator.xpr
-# Log file: C:/Users/avach/Documents/XilinixProjects/shifter_rotator/vivado.log
-# Journal file: C:/Users/avach/Documents/XilinixProjects/shifter_rotator\vivado.jou
+# Start of session at: Mon Feb 26 15:49:54 2018
+# Process ID: 14148
+# Current directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4516 C:\Users\avach\Documents\GitHub\CmpE125\Lab3\Lab3_Part2_shifter_rotator\shifter_rotator.xpr
+# Log file: C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/vivado.log
+# Journal file: C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/avach/Documents/XilinixProjects/shifter_rotator/shifter_rotator.xpr
+open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/avach/Documents/XilinixProjects/shifter_rotator' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/avach/Documents/GitHub/Downloads/shifter_rotator.v'; using path 'C:/Users/avach/Downloads/shifter_rotator.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/avach/Documents/GitHub/Downloads/shift_rotator_fpga.v'; using path 'C:/Users/avach/Downloads/shift_rotator_fpga.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/avach/Documents/GitHub/Downloads/tb_shifter_rotator.v'; using path 'C:/Users/avach/Downloads/tb_shifter_rotator.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/avach/Documents/GitHub/Downloads/shifter_rotator.xdc'; using path 'C:/Users/avach/Downloads/shifter_rotator.xdc' instead.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 724.934 ; gain = 39.430
 update_compile_order -fileset sources_1
-add_files -norecurse {C:/Users/avach/Downloads/shifter_rotator.v C:/Users/avach/Downloads/shift_rotator_fpga.v C:/Users/avach/Downloads/tb_shifter_rotator.v}
-WARNING: [filemgmt 56-12] File 'C:/Users/avach/Downloads/shifter_rotator.v' cannot be added to the project because it already exists in the project, skipping this file
-WARNING: [filemgmt 56-12] File 'C:/Users/avach/Downloads/shift_rotator_fpga.v' cannot be added to the project because it already exists in the project, skipping this file
-WARNING: [filemgmt 56-12] File 'C:/Users/avach/Downloads/tb_shifter_rotator.v' cannot be added to the project because it already exists in the project, skipping this file
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Feb 25 19:07:52 2018...
+set_property top tb_shifter_rotator [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_shifter_rotator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_shifter_rotator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Downloads/shifter_rotator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter_rotator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Downloads/tb_shifter_rotator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_shifter_rotator
+ERROR: [VRFC 10-91] ctrl is not declared [C:/Users/avach/Downloads/tb_shifter_rotator.v:42]
+ERROR: [VRFC 10-1040] module tb_shifter_rotator ignored due to previous errors [C:/Users/avach/Downloads/tb_shifter_rotator.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_shifter_rotator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_shifter_rotator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Downloads/shift_rotator_fpga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rotator_fpga
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Downloads/shifter_rotator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter_rotator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto af8e56db727d47a79bfbee6db3a18f43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_shifter_rotator_behav xil_defaultlib.tb_shifter_rotator xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.shifter_rotator
+Compiling module xil_defaultlib.tb_shifter_rotator
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_shifter_rotator_behav
+
+****** Webtalk v2017.4.1 (64-bit)
+  **** SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+  **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim/xsim.dir/tb_shifter_rotator_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim/xsim.dir/tb_shifter_rotator_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Feb 26 15:52:06 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 26 15:52:06 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 770.234 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_shifter_rotator_behav -key {Behavioral:sim_1:Functional:tb_shifter_rotator} -tclbatch {tb_shifter_rotator.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source tb_shifter_rotator.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Total Errors:           0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_shifter_rotator_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 770.234 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_shifter_rotator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_shifter_rotator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Downloads/shifter_rotator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter_rotator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/avach/Downloads/tb_shifter_rotator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_shifter_rotator
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto af8e56db727d47a79bfbee6db3a18f43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_shifter_rotator_behav xil_defaultlib.tb_shifter_rotator xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.shifter_rotator
+Compiling module xil_defaultlib.tb_shifter_rotator
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_shifter_rotator_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab3/Lab3_Part2_shifter_rotator/shifter_rotator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_shifter_rotator_behav -key {Behavioral:sim_1:Functional:tb_shifter_rotator} -tclbatch {tb_shifter_rotator.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source tb_shifter_rotator.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: with input  1 on control 0
+Error: with input  2 on control 0
+Error: with input  3 on control 0
+Error: with input  4 on control 0
+Error: with input  5 on control 0
+Error: with input  6 on control 0
+Error: with input  7 on control 0
+Error: with input  8 on control 0
+Error: with input  9 on control 0
+Error: with input 10 on control 0
+Error: with input 11 on control 0
+Error: with input 12 on control 0
+Error: with input 13 on control 0
+Error: with input 14 on control 0
+Error: with input 15 on control 0
+Error: with input  0 on control 1
+Error: with input  2 on control 1
+Error: with input  4 on control 1
+Error: with input  6 on control 1
+Error: with input  8 on control 1
+Error: with input 10 on control 1
+Error: with input 12 on control 1
+Error: with input 14 on control 1
+Error: with input  0 on control 2
+Error: with input  4 on control 2
+Error: with input  8 on control 2
+Error: with input 12 on control 2
+Error: with input  0 on control 3
+Error: with input  8 on control 3
+Error: with input  0 on control 5
+Error: with input  1 on control 5
+Error: with input  2 on control 5
+Error: with input  3 on control 5
+Error: with input  4 on control 5
+Error: with input  5 on control 5
+Error: with input  6 on control 5
+Error: with input  7 on control 5
+Error: with input  8 on control 5
+Error: with input  9 on control 5
+Error: with input 10 on control 5
+Error: with input 11 on control 5
+Error: with input 12 on control 5
+Error: with input 13 on control 5
+Error: with input 14 on control 5
+Error: with input 15 on control 5
+Error: with input  0 on control 6
+Error: with input  1 on control 6
+Error: with input  2 on control 6
+Error: with input  3 on control 6
+Error: with input  4 on control 6
+Error: with input  5 on control 6
+Error: with input  6 on control 6
+Error: with input  7 on control 6
+Error: with input  8 on control 6
+Error: with input  9 on control 6
+Error: with input 10 on control 6
+Error: with input 11 on control 6
+Error: with input 12 on control 6
+Error: with input 13 on control 6
+Error: with input 14 on control 6
+Error: with input 15 on control 6
+Error: with input  0 on control 7
+Error: with input  1 on control 7
+Error: with input  2 on control 7
+Error: with input  3 on control 7
+Error: with input  4 on control 7
+Error: with input  5 on control 7
+Error: with input  6 on control 7
+Error: with input  7 on control 7
+Error: with input  8 on control 7
+Error: with input  9 on control 7
+Error: with input 10 on control 7
+Error: with input 11 on control 7
+Error: with input 12 on control 7
+Error: with input 13 on control 7
+Error: with input 14 on control 7
+Error: with input 15 on control 7
+$finish called at time : 680 ns : File "C:/Users/avach/Downloads/tb_shifter_rotator.v" Line 67
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_shifter_rotator_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 793.023 ; gain = 0.000

@@ -1,60 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1519589968">
-  <File Type="PWROPT-DRC" Name="alu_fpga_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="alu_fpga_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="alu_fpga_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="alu_fpga_power_routed.rpx"/>
+  <File Type="BG-DRC" Name="alu_fpga.drc"/>
+  <File Type="ROUTE-PWR" Name="alu_fpga_power_routed.rpt"/>
   <File Type="PA-TCL" Name="alu_fpga.tcl"/>
-  <File Type="OPT-HWDEF" Name="alu_fpga.hwdef"/>
-  <File Type="RDI-RDI" Name="alu_fpga.vdi"/>
   <File Type="OPT-DCP" Name="alu_fpga_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="alu_fpga.hwdef"/>
   <File Type="OPT-DRC" Name="alu_fpga_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="alu_fpga_timing_summary_opted.rpt"/>
+  <File Type="ROUTE-CLK" Name="alu_fpga_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="alu_fpga.vdi"/>
   <File Type="PWROPT-DCP" Name="alu_fpga_pwropt.dcp"/>
-  <File Type="PWROPT-TIMING" Name="alu_fpga_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="alu_fpga_placed.dcp"/>
   <File Type="PLACE-IO" Name="alu_fpga_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="alu_fpga_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="alu_fpga_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="alu_fpga_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="alu_fpga_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="alu_fpga_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="alu_fpga_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="alu_fpga_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="alu_fpga_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="alu_fpga_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="alu_fpga_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="alu_fpga_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="alu_fpga_timing_summary_physopted.rpt"/>
+  <File Type="BG-BIT" Name="alu_fpga.bit"/>
   <File Type="ROUTE-ERROR-DCP" Name="alu_fpga_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="alu_fpga_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="alu_fpga_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="alu_fpga_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="alu_fpga_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="alu_fpga.bin"/>
-  <File Type="ROUTE-DRC-RPX" Name="alu_fpga_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="alu_fpga.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="alu_fpga_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="alu_fpga.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="alu_fpga_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="alu_fpga.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="alu_fpga_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="alu_fpga_power_routed.rpt"/>
+  <File Type="BG-BIN" Name="alu_fpga.bin"/>
+  <File Type="BITSTR-MSK" Name="alu_fpga.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="alu_fpga_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="alu_fpga.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="alu_fpga_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="alu_fpga.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="alu_fpga_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="alu_fpga_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="alu_fpga_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="alu_fpga_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="alu_fpga_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="alu_fpga_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="alu_fpga_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="alu_fpga_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="alu_fpga_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="alu_fpga_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="alu_fpga_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="alu_fpga_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="alu_fpga_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="alu_fpga_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="alu_fpga.bit"/>
-  <File Type="BITSTR-RBT" Name="alu_fpga.rbt"/>
   <File Type="BITSTR-NKY" Name="alu_fpga.nky"/>
   <File Type="BITSTR-BMM" Name="alu_fpga_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="alu_fpga.mmi"/>
