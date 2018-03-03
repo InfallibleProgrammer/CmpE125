@@ -31,9 +31,9 @@ module xor_mod(
 always@(*)
 begin
 	sum[0] = P[0] ^ C0;
-	sum[1] = P[1] ^ C[1];
-	sum[2] = P[2] ^ C[2];
-	sum[3] = P[3] ^ C[3];
+	sum[1] = P[1] ^ C[0];
+	sum[2] = P[2] ^ C[1];
+	sum[3] = P[3] ^ C[2];
 	Cout   = C[3];
 end
 endmodule

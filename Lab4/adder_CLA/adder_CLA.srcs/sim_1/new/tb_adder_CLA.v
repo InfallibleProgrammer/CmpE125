@@ -26,7 +26,7 @@ module tb_adder_CLA();
 	reg  [3:0] b;
 	reg 	   c0;
 	wire [3:0] sum;
-	wire [3:0] Cout;
+	wire       Cout;
 
 	adder_CLA_top DUT(
 		.a    (a),
