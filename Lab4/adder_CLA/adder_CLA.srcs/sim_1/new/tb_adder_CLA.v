@@ -42,6 +42,7 @@ module tb_adder_CLA();
 
 	integer tb_sum;
 	integer error = 0;
+	integer error_value = 0;
 
 	initial begin
 		for(i_c0 = 0; i_c0 < 2; i_c0 = i_c0 + 1)
@@ -53,7 +54,7 @@ module tb_adder_CLA();
 				for(i_b = 0; i_b < 16; i_b = i_b + 1)
 				begin
 					b = i_b;
-					tb_sum = a + b;
+					tb_sum = a + b + c0;
 					#5
 					if (tb_sum != {Cout, sum})
 					begin
