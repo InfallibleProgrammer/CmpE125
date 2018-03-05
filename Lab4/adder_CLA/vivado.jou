@@ -146,3 +146,22 @@ current_sim simulation_7
 close_sim
 launch_simulation
 source tb_adder_CLA.tcl
+close_sim
+close_sim
+open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder/adder.xpr
+current_project adder_CLA
+close_project
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_adder.tcl
+update_compile_order -fileset sim_1
+launch_simulation
+source adder.tcl
+close_sim
+launch_simulation
+source adder.tcl
+update_compile_order -fileset sim_1
+current_sim simulation_10
+close_sim
+launch_simulation
+source tb_adder.tcl

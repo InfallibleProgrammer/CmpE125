@@ -25,42 +25,50 @@ module tb_adder();
 	reg  [3:0] a;
 	reg  [3:0] b;
 	wire [3:0] c;
+	reg 		carryin;
+	wire		carryout;
 
 	integer i_a;
 	integer i_b;
 	integer i_c;
+	integer i_carin;
 	integer error = 0;
 
 	adder DUT(
 		.a (a),
 		.b (b),
-		.c (c)
+		.c (c),
+		.carryin (carryin),
+		.carryout (carryout)
 		);
 
 	initial begin
 		for(i_a = 0; i_a < 16; i_a = i_a + 1)
 		begin
 			a = i_a;
-			#5
-			for(i_b = 0; i_b < 16; i_b = i_b + 1)
+	      for(i_carin = 0; i_carin<2; i_carin = i_carin +1)
 			begin
-				b = i_b;
+				carryin = i_carin;
 				#5
-				i_c = a + b;
-				if (i_c[3:0] != c)
+				for(i_b = 0; i_b < 16; i_b = i_b + 1)
 				begin
-					$display("Error at a: %d b: %d, sum should be: %d, but is %d", a, b, c, i_c);
-					error = error + 1;
+					b = i_b;
+					#5
+					i_c = a + b;
+					if (i_c != {carryout, c})
+					begin
+						$display("Error at a: %d b: %d, sum should be: %d, but is %d", a, b, c, i_c);
+						error = error + 1;
+					end
 				end
 			end
-		end
 
-		if (error == 0)
-		begin
-			$display("Simulation completed. No errors!");
-		end
+			if (error == 0)
+			begin
+				$display("Simulation completed. No errors!");
+			end
 
 	$finish;
 	end
-
+end
 endmodule
