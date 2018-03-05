@@ -2,8 +2,8 @@
 # Vivado v2017.4.1 (64-bit)
 # SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
 # IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
-# Start of session at: Mon Mar  5 01:30:25 2018
-# Process ID: 6668
+# Start of session at: Mon Mar  5 02:06:51 2018
+# Process ID: 14904
 # Current directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.runs/synth_1
 # Command line: vivado.exe -log adder_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adder_fpga.tcl
 # Log file: C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.runs/synth_1/adder_fpga.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12076 
+INFO: Helper process launched with PID 14648 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 344.688 ; gain = 100.738
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 344.242 ; gain = 100.223
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'adder_fpga' [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:23]
 INFO: [Synth 8-638] synthesizing module 'adder_CLA_top' [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_CLA_top.v:23]
@@ -38,11 +38,9 @@ WARNING: [Synth 8-689] width (1) of port connection 'BCD' does not match port wi
 INFO: [Synth 8-638] synthesizing module 'led_mux' [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/led_mux.v:1]
 INFO: [Synth 8-226] default block is never used [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/led_mux.v:10]
 INFO: [Synth 8-256] done synthesizing module 'led_mux' (8#1) [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/led_mux.v:1]
-WARNING: [Synth 8-350] instance 'LED' of module 'led_mux' requires 12 connections, but only 11 given [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
-WARNING: [Synth 8-3848] Net LEDSEL in module/entity adder_fpga does not have driver. [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:29]
 INFO: [Synth 8-256] done synthesizing module 'adder_fpga' (9#1) [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 397.266 ; gain = 153.316
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 396.219 ; gain = 152.199
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -51,16 +49,8 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin LED:LED0[7] to constant 0 [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
-WARNING: [Synth 8-3295] tying undriven pin LED:LED0[6] to constant 0 [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
-WARNING: [Synth 8-3295] tying undriven pin LED:LED0[5] to constant 0 [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
-WARNING: [Synth 8-3295] tying undriven pin LED:LED0[4] to constant 0 [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
-WARNING: [Synth 8-3295] tying undriven pin LED:LED0[3] to constant 0 [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
-WARNING: [Synth 8-3295] tying undriven pin LED:LED0[2] to constant 0 [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
-WARNING: [Synth 8-3295] tying undriven pin LED:LED0[1] to constant 0 [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
-WARNING: [Synth 8-3295] tying undriven pin LED:LED0[0] to constant 0 [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_fpga.v:64]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 397.266 ; gain = 153.316
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 396.219 ; gain = 152.199
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -70,9 +60,6 @@ Initializing timing engine
 Parsing XDC File [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/constrs_1/new/adder_cla.xdc]
 CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "clk100MHz"
  [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/constrs_1/new/adder_cla.xdc:2]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command 'set_property -dict {PACKAGE_PIN M13 IOSTANDARD LVCMOS33} [get_ports {B[2]};
-set_property -dict {PACKAGE_PIN R15 IOSTANDARD LVCMOS33} [get_ports {B[3]};
-set_property -dict {PACKAGE_PIN H17 IOSTANDARD L ... (truncated) ' found in constraint file. [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/constrs_1/new/adder_cla.xdc:7]
 Finished Parsing XDC File [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/constrs_1/new/adder_cla.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/constrs_1/new/adder_cla.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/adder_fpga_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/adder_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -81,29 +68,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 739.730 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 740.469 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 739.730 ; gain = 495.781
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 740.469 ; gain = 496.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 739.730 ; gain = 495.781
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 740.469 ; gain = 496.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 739.730 ; gain = 495.781
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 740.469 ; gain = 496.449
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_4sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "count2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 739.730 ; gain = 495.781
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 740.469 ; gain = 496.449
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -178,7 +165,7 @@ WARNING: [Synth 8-6014] Unused sequential element clk_gen/clk_4sec_reg was remov
 INFO: [Synth 8-5545] ROM "clk_gen/count2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_gen/clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 739.730 ; gain = 495.781
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 740.469 ; gain = 496.449
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -190,13 +177,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 739.730 ; gain = 495.781
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 740.469 ; gain = 496.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 739.730 ; gain = 495.781
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 740.469 ; gain = 496.449
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -208,7 +195,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 757.336 ; gain = 513.387
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 762.613 ; gain = 518.594
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -232,7 +219,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 757.336 ; gain = 513.387
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 762.613 ; gain = 518.594
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -245,7 +232,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 757.336 ; gain = 513.387
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 762.613 ; gain = 518.594
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -257,25 +244,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 757.336 ; gain = 513.387
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 762.613 ; gain = 518.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 757.336 ; gain = 513.387
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 762.613 ; gain = 518.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 757.336 ; gain = 513.387
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 762.613 ; gain = 518.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 757.336 ; gain = 513.387
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 762.613 ; gain = 518.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -294,43 +281,43 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |     8|
 |3     |LUT1   |     1|
-|4     |LUT2   |     1|
-|5     |LUT3   |     9|
-|6     |LUT4   |     5|
-|7     |LUT5   |    10|
-|8     |FDRE   |    36|
-|9     |IBUF   |    10|
-|10    |OBUF   |    16|
-|11    |OBUFT  |     8|
+|4     |LUT2   |     6|
+|5     |LUT3   |    12|
+|6     |LUT4   |    12|
+|7     |LUT5   |    14|
+|8     |LUT6   |    17|
+|9     |FDRE   |    36|
+|10    |IBUF   |    11|
+|11    |OBUF   |    24|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+----------+--------+------+
 |      |Instance  |Module  |Cells |
 +------+----------+--------+------+
-|1     |top       |        |   105|
-|2     |  LED     |led_mux |    14|
+|1     |top       |        |   142|
+|2     |  LED     |led_mux |    30|
 |3     |  clk_gen |clk_gen |    56|
 +------+----------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 757.336 ; gain = 513.387
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 762.613 ; gain = 518.594
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 757.336 ; gain = 170.922
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 757.336 ; gain = 513.387
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 762.613 ; gain = 174.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 762.613 ; gain = 518.594
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-37 Infos, 13 Warnings, 2 Critical Warnings and 0 Errors encountered.
+37 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 758.855 ; gain = 527.852
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 762.613 ; gain = 531.871
 INFO: [Common 17-1381] The checkpoint 'C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.runs/synth_1/adder_fpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file adder_fpga_utilization_synth.rpt -pb adder_fpga_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 758.855 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  5 01:31:11 2018...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.040 . Memory (MB): peak = 762.613 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  5 02:07:35 2018...

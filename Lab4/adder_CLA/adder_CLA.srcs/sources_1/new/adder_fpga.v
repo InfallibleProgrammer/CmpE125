@@ -61,7 +61,7 @@ module adder_fpga(
       bcd_to_7seg Seg10(tens, tens_led);
       bcd_to_7seg Seg0(ones, ones_led);
       bcd_to_7seg SegC(C0, C0_led);
-      led_mux LED(clk_5KHz, rst, vcc, vcc, vcc, vcc, vcc, tens_led, ones_led,
+      led_mux LED(clk_5KHz, rst, C0_led, vcc, vcc, vcc, vcc, vcc, tens_led, ones_led,
       LEDSEL, LEDOUT); //led_mux object needs to be named
 endmodule
 

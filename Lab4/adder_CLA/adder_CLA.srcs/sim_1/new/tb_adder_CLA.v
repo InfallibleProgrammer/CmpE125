@@ -73,6 +73,6 @@ module tb_adder_CLA();
 		begin
 			$display("There were %d errors", error);
 		end
-
+    $display("I got here");
 	end
 endmodule

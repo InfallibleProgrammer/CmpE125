@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
-| Date             : Mon Mar  5 01:32:41 2018
+| Date             : Mon Mar  5 02:08:52 2018
 | Host             : DESKTOP-E17FLM2 running 64-bit major release  (build 9200)
 | Command          : report_power -file adder_fpga_power_routed.rpt -pb adder_fpga_power_summary_routed.pb -rpx adder_fpga_power_routed.rpx
 | Design           : adder_fpga
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 6.362        |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 6.232        |
-| Device Static (W)        | 0.130        |
-| Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 56.0         |
-| Junction Temperature (C) | 54.0         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 34.268 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 33.471                           |
+| Device Static (W)        | 0.797                            |
+| Effective TJA (C/W)      | 4.6                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.219 |       77 |       --- |             --- |
-|   LUT as Logic |     0.175 |       20 |     63400 |            0.03 |
-|   CARRY4       |     0.019 |        8 |     15850 |            0.05 |
-|   Register     |     0.019 |       36 |    126800 |            0.03 |
+| Slice Logic    |     0.538 |      112 |       --- |             --- |
+|   LUT as Logic |     0.498 |       48 |     63400 |            0.08 |
+|   CARRY4       |     0.017 |        8 |     15850 |            0.05 |
+|   Register     |     0.017 |       36 |    126800 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     0.278 |       72 |       --- |             --- |
-| I/O            |     5.736 |       34 |       210 |           16.19 |
-| Static Power   |     0.130 |          |           |                 |
-| Total          |     6.362 |          |           |                 |
+|   Others       |     0.000 |        5 |       --- |             --- |
+| Signals        |     0.807 |      110 |       --- |             --- |
+| I/O            |    32.126 |       35 |       210 |           16.67 |
+| Static Power   |     0.797 |          |           |                 |
+| Total          |    34.268 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,16 +71,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.579 |       0.532 |      0.047 |
-| Vccaux    |       1.800 |     0.488 |       0.467 |      0.022 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vccint    |       1.000 |     1.948 |       1.385 |      0.563 |
+| Vccaux    |       1.800 |     1.269 |       1.176 |      0.093 |
+| Vcco33    |       3.300 |     9.086 |       9.082 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     2.704 |       2.700 |      0.004 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| Vccbram   |       1.000 |     0.018 |       0.000 |      0.018 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -138,9 +138,9 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| adder_fpga |     6.232 |
-|   LED      |     0.242 |
-|   clk_gen  |     0.184 |
+| adder_fpga |    33.471 |
+|   LED      |     0.860 |
+|   clk_gen  |     0.170 |
 +------------+-----------+
 
 
