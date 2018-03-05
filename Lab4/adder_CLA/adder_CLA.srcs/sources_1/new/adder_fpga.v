@@ -48,7 +48,7 @@ module adder_fpga(
       wire [7:0] ones_led;
       wire [7:0] C0_led;
 
-      adder_CLA_top CLA(
+      adder_CLA_top CLA1(
         .a     (A),
         .b     (B),
         .c0    (C0),

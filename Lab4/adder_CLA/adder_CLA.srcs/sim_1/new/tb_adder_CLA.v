@@ -63,16 +63,15 @@ module tb_adder_CLA();
 				end
 			end
 		end
+	if (error == 0)
+    begin
+        $display("Simulation completed. No errors!");
+    end
 
-		if (error == 0)
-		begin
-			$display("Simulation completed. No errors!");
-		end
-
-		if(error != 0)
-		begin
-			$display("There were %d errors", error);
-		end
-    $display("I got here");
-	end
+   	if(error != 0)
+   	begin
+       $display("There were %d errors", error);
+   	end
+   $display("I got here");
+end
 endmodule

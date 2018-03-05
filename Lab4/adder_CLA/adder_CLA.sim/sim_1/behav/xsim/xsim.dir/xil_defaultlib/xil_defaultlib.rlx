@@ -3,7 +3,7 @@
 Jan 30 2018
 15:48:17
 C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sim_1/new/tb_adder_CLA.v,1520284541,verilog,,,,tb_adder_CLA,,,,,,,,
+C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sim_1/new/tb_adder_CLA.v,1520289407,verilog,,,,tb_adder_CLA,,,,,,,,
 C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/CLA_generator.v,1520235112,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_CLA_top.v,,CLA_generator,,,,,,,,
 C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/adder_CLA_top.v,1520235112,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/half_adders.v,,adder_CLA_top,,,,,,,,
 C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/half_adders.v,1520235112,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder_CLA/adder_CLA.srcs/sources_1/new/xor_mod.v,,half_adders,,,,,,,,
