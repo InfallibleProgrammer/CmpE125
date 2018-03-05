@@ -1,21 +1,23 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Feb 12 14:35:50 2018
-# Process ID: 11148
-# Current directory: C:/Users/avach/Documents/XilinixProjects/voting_machine
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8588 C:\Users\avach\Documents\XilinixProjects\voting_machine\voting_machine.xpr
-# Log file: C:/Users/avach/Documents/XilinixProjects/voting_machine/vivado.log
-# Journal file: C:/Users/avach/Documents/XilinixProjects/voting_machine\vivado.jou
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Thu Mar  1 14:30:00 2018
+# Process ID: 11656
+# Current directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8228 C:\Users\avach\Documents\GitHub\CmpE125\Lab2\voting_machine\voting_machine.xpr
+# Log file: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/vivado.log
+# Journal file: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine\vivado.jou
 #-----------------------------------------------------------
+ERROR: [Common 17-356] Failed to install all user apps.
 start_gui
-open_project C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.xpr
+open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 738.832 ; gain = 54.980
 update_compile_order -fileset sources_1
 open_hw
 connect_hw_server
@@ -23,14 +25,14 @@ INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
 INFO: [Labtools 27-2222] Launching hw_server...
 INFO: [Labtools 27-2221] Launch Output:
 
-****** Xilinx hw_server v2017.4
-  **** Build date : Dec 15 2017-21:08:27
+****** Xilinx hw_server v2017.4.1
+  **** Build date : Jan 30 2018-15:49:02
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBECA
-set_property PROGRAM.FILE {C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
@@ -41,7 +43,7 @@ Resolution:
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
@@ -51,75 +53,128 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/sources_1/new/voting_rule_tb.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/sources_1/new/voting_rule.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/sources_1/new/voting_machine_fpga.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/sources_1/new/voting_rule_tb.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/sources_1/new/voting_rule.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.srcs/sources_1/new/voting_machine_fpga.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-create_run synth_3 -flow {Vivado Synthesis 2017} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
-Run is defaulting to srcset: sources_1
-Run is defaulting to constrset: constrs_1
-Run is defaulting to part: xc7a100tcsg324-1
-current_run [get_runs synth_3]
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'voting_rule_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj voting_rule_tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 1e50768b1957461a9262ecab70b125b0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_rule_tb_behav xil_defaultlib.voting_rule_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "voting_rule_tb_behav -key {Behavioral:sim_1:Functional:voting_rule_tb} -tclbatch {voting_rule_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source voting_rule_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-                   0A=0, B=0, C=0 : a=0, b=0, c=0, d=0
-                   5A=0, B=0, C=1 : a=0, b=1, c=0, d=0
-                  10A=0, B=1, C=0 : a=0, b=0, c=1, d=1
-                  15A=0, B=1, C=1 : a=0, b=1, c=1, d=1
-                  20A=1, B=0, C=0 : a=0, b=0, c=1, d=0
-                  25A=1, B=0, C=1 : a=0, b=1, c=1, d=0
-                  30A=1, B=1, C=0 : a=0, b=1, c=0, d=1
-                  35A=1, B=1, C=1 : a=1, b=0, c=0, d=1
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'voting_rule_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1403.328 ; gain = 6.078
+reset_run impl_3
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_3
 launch_runs impl_3 -to_step write_bitstream -jobs 2
-[Mon Feb 12 15:18:40 2018] Launched synth_3...
-Run output will be captured here: C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/synth_3/runme.log
-[Mon Feb 12 15:18:40 2018] Launched impl_3...
-Run output will be captured here: C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_3/runme.log
+[Thu Mar  1 14:37:19 2018] Launched synth_3...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/synth_3/runme.log
+[Thu Mar  1 14:37:19 2018] Launched impl_3...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_3/runme.log
+open_run impl_3
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/.Xil/Vivado-11656-DESKTOP-E17FLM2/dcp0/voting_machine_fpga.xdc]
+Finished Parsing XDC File [C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/.Xil/Vivado-11656-DESKTOP-E17FLM2/dcp0/voting_machine_fpga.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1682.969 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1682.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1773.582 ; gain = 403.680
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/avach/Documents/XilinixProjects/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+[Thu Mar  1 14:44:04 2018] Launched synth_3...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/synth_3/runme.log
+[Thu Mar  1 14:44:04 2018] Launched impl_3...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+[Thu Mar  1 14:50:04 2018] Launched synth_3...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/synth_3/runme.log
+[Thu Mar  1 14:50:04 2018] Launched impl_3...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_2/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_3/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+[Thu Mar  1 14:54:02 2018] Launched synth_3...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/synth_3/runme.log
+[Thu Mar  1 14:54:02 2018] Launched impl_3...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_3/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
@@ -130,10 +185,20 @@ Resolution:
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6EBECA
-open_run impl_3
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.4
-open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1478.121 ; gain = 61.836
-INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBECA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/avach/Documents/GitHub/CmpE125/Lab2/voting_machine/voting_machine.runs/impl_3/voting_machine_fpga.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_3
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6EBECA

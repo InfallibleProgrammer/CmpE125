@@ -1,0 +1,115 @@
+/*
+
+Xilinx Vivado v2017.4.1 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2117270 on Tue Jan 30 15:32:00 MST 2018
+IP Build: 2095745 on Tue Jan 30 17:13:15 MST 2018
+
+Process ID: 15964
+License: Customer
+
+Current time: 	Thu Mar 01 13:40:26 PST 2018
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 122 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	avach
+User home directory: C:/Users/avach
+User working directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/avach/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/avach/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/avach/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder/vivado.log
+Vivado journal file location: 	C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder/vivado.jou
+Engine tmp dir: 	C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder/.Xil/Vivado-15964-DESKTOP-E17FLM2
+
+GUI allocated memory:	178 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 460 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 41 MB (+40367kb) [00:00:05]
+// [Engine Memory]: 453 MB (+323549kb) [00:00:05]
+// aL (cj): Older Project Version: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 460 MB. GUI used memory: 33 MB. Current time: 3/1/18 1:40:28 PM PST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: C:\Users\avach\Documents\GitHub\CmpE125\Lab4\adder\adder.xpr. Version: Vivado v2017.2 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+dismissDialog("Older Project Version"); // aL (cj)
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder/adder.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder/adder.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/bcgni/adder' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'adder.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 488 MB. GUI used memory: 33 MB. Current time: 3/1/18 1:42:58 PM PST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 546 MB (+73195kb) [00:02:40]
+// [GUI Memory]: 54 MB (+11424kb) [00:02:41]
+// [GUI Memory]: 58 MB (+2001kb) [00:02:41]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// Project name: adder; location: C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder; part: xc7a100tcsg324-1
+// [GUI Memory]: 62 MB (+284kb) [00:02:43]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (adder.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, adder (adder.v)]", 1, false); // B (D, cj)
+// [GUI Memory]: 65 MB (+669kb) [00:02:49]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, adder (adder.v)]", 1, false, false, false, false, false, true); // B (D, cj) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_adder (tb_adder.v), DUT : adder (adder.v)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_adder (tb_adder.v), DUT : adder (adder.v)]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_adder (tb_adder.v), DUT : adder (adder.v)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_adder (tb_adder.v), DUT : adder (adder.v)]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [GUI Memory]: 69 MB (+495kb) [00:03:04]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_adder (tb_adder.v)]", 5, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_adder (tb_adder.v)]", 5, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_adder.v", 65, 77); // cd (w, cj)
+selectCodeEditor("tb_adder.v", 70, 79); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "adder.v", 1); // k (j, cj)
+// [GUI Memory]: 73 MB (+608kb) [00:03:25]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_adder.v", 2); // k (j, cj)
+selectCodeEditor("tb_adder.v", 95, 171); // cd (w, cj)
+selectCodeEditor("tb_adder.v", 95, 171, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("tb_adder.v", 108, 10); // cd (w, cj)
+selectCodeEditor("tb_adder.v", 108, 10, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("tb_adder.v", 113, 12); // cd (w, cj)
+selectCodeEditor("tb_adder.v", 265, 187, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+// [GUI Memory]: 78 MB (+683kb) [00:06:46]
+// [GUI Memory]: 82 MB (+268kb) [00:17:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 563 MB. GUI used memory: 41 MB. Current time: 3/1/18 2:12:59 PM PST

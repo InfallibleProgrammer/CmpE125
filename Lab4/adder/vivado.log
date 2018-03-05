@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Thu Mar  1 13:40:13 2018
+# Process ID: 15964
+# Current directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6048 C:\Users\avach\Documents\GitHub\CmpE125\Lab4\adder\adder.xpr
+# Log file: C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder/vivado.log
+# Journal file: C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab4/adder/adder.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/bcgni/adder' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'adder.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
