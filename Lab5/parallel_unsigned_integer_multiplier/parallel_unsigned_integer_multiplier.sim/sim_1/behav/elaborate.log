@@ -1,0 +1,22 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 03e93a2302ca46dca4f7c03c9aadf089 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_parallel_multiplier_behav xil_defaultlib.tb_parallel_multiplier xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Cin [C:/Users/bcgni/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/parallel_multiplier_top.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Cin [C:/Users/bcgni/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/parallel_multiplier_top.v:74]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Cin [C:/Users/bcgni/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/parallel_multiplier_top.v:82]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.and_mod
+Compiling module xil_defaultlib.half_adders
+Compiling module xil_defaultlib.CLA_generator
+Compiling module xil_defaultlib.xor_mod
+Compiling module xil_defaultlib.adder_CLA_top
+Compiling module xil_defaultlib.adder_8bit
+Compiling module xil_defaultlib.parallel_multiplier_top
+Compiling module xil_defaultlib.tb_parallel_multiplier
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_parallel_multiplier_behav
