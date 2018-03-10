@@ -21,14 +21,20 @@
 
 
 module adder(
-	input      [3:0] a,
-	input      [3:0] b,
-	output reg [3:0] c
+	input  [3:0] a,
+	input  [3:0] b,
+	input        Cin,
+	output reg [3:0] c,
+	output reg     Cout  
     );
 
-always@(*)
-begin
-	c = a + b;
-end
+	integer sum;
+
+	always@(*)
+	begin
+		sum = a + b + Cin;
+		c = sum[3:0];
+		Cout = sum[4];
+	end
 
 endmodule
