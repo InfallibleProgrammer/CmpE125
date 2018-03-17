@@ -518,3 +518,118 @@ selectCodeEditor("parallel_multiplier_top.v", 139, 104); // cd (w, cj)
 selectCodeEditor("parallel_multiplier_top.v", 258, 147); // cd (w, cj)
 // Elapsed time: 10 seconds
 selectCodeEditor("parallel_multiplier_top.v", 158, 110); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 48 MB. Current time: 3/17/18 3:43:43 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 47 MB. Current time: 3/17/18 4:13:44 PM PDT
+// [GUI Memory]: 118 MB (+1614kb) [02:10:01]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 3567 seconds
+selectCodeEditor("parallel_multiplier_top.v", 40, 130); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 29 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, parallel_multiplier_top.v]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, parallel_multiplier_top.v]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("parallel_multiplier_top.v", 137, 81); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pip_reg.v", 3); // k (j, cj)
+// [GUI Memory]: 131 MB (+7204kb) [02:12:53]
+selectCodeEditor("pip_reg.v", 371, 26); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("parallel_multiplier_top.v", 54, 194); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 54, 194); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 49, 43); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("parallel_multiplier_top.v", 97, 147); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 260, 282); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 44 MB. Current time: 3/17/18 4:43:45 PM PDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 1318 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v)]", 1, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v)]", 1, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v), pipA : pip_reg (pip_reg.v)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v)]", 1, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v), pipB : pip_reg (pip_reg.v)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_multiplier_top (parallel_multiplier_top.v)]", 16, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_multiplier_top (parallel_multiplier_top.v)]", 16, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14, true); // B (D, cj) - Node
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_multiplier_top (parallel_multiplier_top.v)]", 16, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("parallel_multiplier_top.v", 104, 160); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 104, 160, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("parallel_multiplier_top.v", 86, 224); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 86, 224, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 86 seconds
+selectCodeEditor("parallel_multiplier_top.v", 114, 231); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 123, 161); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 125, 231); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 125, 46); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 151, 199); // cd (w, cj)
+// Elapsed time: 33 seconds
+selectCodeEditor("parallel_multiplier_top.v", 97, 212); // cd (w, cj)
+selectCodeEditor("parallel_multiplier_top.v", 86, 212); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
