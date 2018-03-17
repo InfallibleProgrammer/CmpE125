@@ -21,6 +21,7 @@
 
 
 module adder(
+<<<<<<< HEAD
 	input      [3:0] a,
 	input      [3:0] b,
 	input            carryin,
@@ -34,5 +35,22 @@ begin
 	c = a + b;
 	carryout = sum[4];
 end
+=======
+	input  [3:0] a,
+	input  [3:0] b,
+	input        Cin,
+	output reg [3:0] c,
+	output reg     Cout  
+    );
+
+	integer sum;
+
+	always@(*)
+	begin
+		sum = a + b + Cin;
+		c = sum[3:0];
+		Cout = sum[4];
+	end
+>>>>>>> 4fa5925f0c76dfb17f9a5bd9bf9125f91f953138
 
 endmodule
