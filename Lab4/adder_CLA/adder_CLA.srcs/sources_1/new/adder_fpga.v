@@ -22,7 +22,7 @@
 
 module adder_fpga(
   input   clk100MHz, 
-  input rst,
+  input   rst,
   input  [3:0] A, 
   input  [3:0] B, 
   input        C0, 

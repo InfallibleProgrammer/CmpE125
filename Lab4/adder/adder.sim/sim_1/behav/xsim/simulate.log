@@ -1,0 +1,8 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Error at a:  0 b: 15, sum should be: 15, but is          15
+Error at a:  1 b: 14, sum should be: 15, but is          15
+Error at a:  2 b: 13, sum should be: 15, but is          15
+Error at a:  3 b: 12, sum should be: 15, but is          15
+Error at a:  4 b: 11, sum should be: 15, but is          15
+Error at a:  5 b: 10, sum should be: 15, but is          15

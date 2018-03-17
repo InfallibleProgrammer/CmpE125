@@ -49,7 +49,6 @@ module tb_adder();
 	      for(i_carin = 0; i_carin<2; i_carin = i_carin +1)
 			begin
 				carryin = i_carin;
-				#5
 				for(i_b = 0; i_b < 16; i_b = i_b + 1)
 				begin
 					b = i_b;
@@ -68,7 +67,6 @@ module tb_adder();
 				$display("Simulation completed. No errors!");
 			end
 
-	$finish;
 	end
 end
 endmodule

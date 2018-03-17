@@ -32,7 +32,7 @@ always@(*)
 begin
     sum = a+b+carryin;
 	c = a + b;
-	carryout = sum[5];
+	carryout = sum[4];
 end
 
 endmodule
