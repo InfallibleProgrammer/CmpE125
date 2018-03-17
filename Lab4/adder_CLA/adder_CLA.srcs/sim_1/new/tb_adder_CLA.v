@@ -68,7 +68,7 @@ module tb_adder_CLA();
         $display("Simulation completed. No errors!");
     end
 
-   	if(error != 0)
+    	if(error != 0)
    	begin
        $display("There were %d errors", error);
    	end
