@@ -51,15 +51,12 @@ module tb_parallel_multiplier();
 	    for(clock = 0; clock < 2; clock = clock + 1)
 	       begin
 	           clk = clock;
-	           #5
 	       for(reset = 0; reset < 2; reset = reset + 1)
 	           begin
 	           rst = reset;
-	           #5
 	           for(enable = 0; enable < 2; enable = enable + 1)
 	           begin
 	               en = enable;
-	               #5
                     for(i_A = 0; i_A < 16; i_A = i_A + 1)
                         begin
                             A = i_A;
