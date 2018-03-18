@@ -24,3 +24,10 @@ update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/avach/Documents/GitHub/CmpE125/Lab5/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/tb_parallel_multiplier.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source tb_parallel_multiplier.tcl

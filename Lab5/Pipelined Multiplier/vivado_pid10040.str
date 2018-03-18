@@ -633,3 +633,283 @@ selectCodeEditor("parallel_multiplier_top.v", 86, 212); // cd (w, cj)
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 45 MB. Current time: 3/17/18 5:13:45 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 45 MB. Current time: 3/17/18 5:43:45 PM PDT
+// Elapsed time: 3438 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v)]", 1); // B (D, cj)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 13); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_multiplier_top (parallel_multiplier_top.v)]", 17, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_multiplier_top (parallel_multiplier_top.v), PP0_1 : adder_8bit (adder_8bit.v)]", 8, true); // B (D, cj) - Node
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 13 seconds
+setFileChooser("C:/Users/avach/Documents/GitHub/CmpE125/Lab5/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/tb_parallel_multiplier.v");
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 20 seconds
+dismissDialog("Add Sources"); // c (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse C:/Users/avach/Documents/GitHub/CmpE125/Lab5/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/tb_parallel_multiplier.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_parallel_multiplier (tb_parallel_multiplier.v)]", 17, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_parallel_multiplier (tb_parallel_multiplier.v), DUT : parallel_multiplier_top (parallel_multiplier_top.v)]", 18, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 5); // k (j, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 142, 75); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 5); // k (j, cj)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 5); // k (j, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 100, 79); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 5); // k (j, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 152, 154); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 173, 78); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 108 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 140, 97); // cd (w, cj)
+// Elapsed time: 22 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 119, 237); // cd (w, cj)
+// Elapsed time: 60 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 48, 194); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 54, 212); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 307, 76); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 28, 246); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 74, 244); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 78, 223); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 123, 272); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 123, 272, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("tb_parallel_multiplier.v", 123, 236); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 118, 253); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 118, 253, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("tb_parallel_multiplier.v", 105, 251); // cd (w, cj)
+// Elapsed time: 26 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 136, 76); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 166, 133); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 50, 247); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 180, 84); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 284, 24); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 284, 24, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("tb_parallel_multiplier.v", 264, 25); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 264, 25, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 182, 42); // cd (w, cj)
+// Elapsed time: 73 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 84, 130); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 174, 74); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 109, 96); // cd (w, cj)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_parallel_multiplier.v", 144, 125); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 44, 248); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 117, 230); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 55, 245); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 11 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 203, 148); // cd (w, cj)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 69 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 119, 93); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 115, 102); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 115, 94); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 125, 192); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 115, 203); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 144, 191); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("tb_parallel_multiplier.v", 180, 163); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 180, 163, false, false, false, false, true); // cd (w, cj) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cj):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_parallel_multiplier' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (A, G)
+// a (cj): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cj)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF (Q, cj)
+// Elapsed time: 16 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aF (Q, cj)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aF (Q, cj)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-426] cannot find port B on this module [C:/Users/avach/Documents/GitHub/CmpE125/Lab5/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/tb_parallel_multiplier.v:34]. ]", 6, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\avach\Documents\GitHub\CmpE125\Lab5\parallel_unsigned_integer_multiplier\parallel_unsigned_integer_multiplier.srcs\sim_1\new\tb_parallel_multiplier.v;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 5); // k (j, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 63, 218); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 5); // k (j, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cj):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_parallel_multiplier' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot tb_parallel_multiplier_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2017.4.1 (64-bit)   **** SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018   **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined -notrace couldn't read file "C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined": no such file or directory INFO: [Common 17-206] Exiting Webtalk at Sat Mar 17 18:08:12 2018... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_parallel_multiplier_behav -key {Behavioral:sim_1:Functional:tb_parallel_multiplier} -tclbatch {tb_parallel_multiplier.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 57 MB. Current time: 3/17/18 6:08:14 PM PDT
+// Tcl Message: source tb_parallel_multiplier.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_parallel_multiplier_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 807.473 ; gain = 15.645 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e (cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 53 MB. Current time: 3/17/18 6:08:19 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 54 MB. Current time: 3/17/18 6:08:20 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 53 MB. Current time: 3/17/18 6:08:20 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 54 MB. Current time: 3/17/18 6:08:20 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 54 MB. Current time: 3/17/18 6:08:20 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 53 MB. Current time: 3/17/18 6:08:20 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 53 MB. Current time: 3/17/18 6:08:20 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 54 MB. Current time: 3/17/18 6:08:20 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 53 MB. Current time: 3/17/18 6:08:22 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 53 MB. Current time: 3/17/18 6:08:22 PM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 54 MB. Current time: 3/17/18 6:08:22 PM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 56 MB. Current time: 3/17/18 6:08:27 PM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 392 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "adder_8bit.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 3); // k (j, cj)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 4); // k (j, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 306, 344); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 301, 142); // cd (w, cj)
+selectCodeEditor("tb_parallel_multiplier.v", 85, 299); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 4); // k (j, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 5); // k (j, cj)
