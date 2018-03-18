@@ -1,14 +1,14 @@
 0.6
 2017.4
-Jan 30 2018
-15:48:17
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/CLA_generator.v,1521320990,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/adder_8bit.v,,CLA_generator,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/adder_8bit.v,1521320990,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/adder_CLA_top.v,,adder_8bit,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/adder_CLA_top.v,1521320990,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/and_mod.v,,adder_CLA_top,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/and_mod.v,1521324278,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/half_adders.v,,and_mod,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/half_adders.v,1521320990,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/parallel_multiplier_top.v,,half_adders,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/parallel_multiplier_top.v,1521331055,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/pip_reg.v,,parallel_multiplier_top,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/pip_reg.v,1521325800,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/xor_mod.v,,pip_reg,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/xor_mod.v,1521320990,verilog,,C:/Users/avach/Documents/GitHub/CmpE125/Lab5/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/tb_parallel_multiplier.v,,xor_mod,,,,,,,,
-C:/Users/avach/Documents/GitHub/CmpE125/Lab5/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/tb_parallel_multiplier.v,1521335280,verilog,,,,tb_parallel_multiplier,,,,,,,,
+Dec 15 2017
+21:07:18
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim/glbl.v,1521349291,verilog,,,,glbl,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sim_1/new/tb_para_mult.v,1521401075,verilog,,,,tb_para_mult,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/CLA_generator.v,1521332859,verilog,,C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/adder_8bit.v,,CLA_generator,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/adder_8bit.v,1521332859,verilog,,C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/adder_CLA_top.v,,adder_8bit,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/adder_CLA_top.v,1521332859,verilog,,C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/and_mod.v,,adder_CLA_top,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/and_mod.v,1521332859,verilog,,C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/half_adders.v,,and_mod,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/half_adders.v,1521332859,verilog,,C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/pip_reg.v,,half_adders,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/parallel_multiplier_top.v,1521401689,verilog,,C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sim_1/new/tb_para_mult.v,,parallel_multiplier_top,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/pip_reg.v,1521332859,verilog,,C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/xor_mod.v,,pip_reg,,,,,,,,
+C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/xor_mod.v,1521332859,verilog,,C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.srcs/sources_1/new/parallel_multiplier_top.v,,xor_mod,,,,,,,,

@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Pipelined Multiplier.srcs/sources_1/new/CLA_generator.v" \
+"../../../../Pipelined Multiplier.srcs/sources_1/new/adder_8bit.v" \
+"../../../../Pipelined Multiplier.srcs/sources_1/new/adder_CLA_top.v" \
+"../../../../Pipelined Multiplier.srcs/sources_1/new/and_mod.v" \
+"../../../../Pipelined Multiplier.srcs/sources_1/new/half_adders.v" \
+"../../../../Pipelined Multiplier.srcs/sources_1/new/pip_reg.v" \
+"../../../../Pipelined Multiplier.srcs/sources_1/new/xor_mod.v" \
+"../../../../Pipelined Multiplier.srcs/sources_1/new/parallel_multiplier_top.v" \
+"../../../../Pipelined Multiplier.srcs/sim_1/new/tb_para_mult.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

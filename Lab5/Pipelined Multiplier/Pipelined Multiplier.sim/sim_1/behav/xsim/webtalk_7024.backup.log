@@ -2,11 +2,13 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Mar 18 11:14:39 2018
-# Process ID: 9100
+# Start of session at: Sun Mar 18 11:09:45 2018
+# Process ID: 7024
 # Current directory: C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim/xsim.dir/tb_para_mult_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined Multiplier/Pipelined Multiplier.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined -notrace
+couldn't read file "C:/Users/bcgni/Documents/CmpE125_Git/Lab5/Pipelined": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 18 11:09:45 2018...
