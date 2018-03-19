@@ -11,7 +11,7 @@ module pip_reg #(parameter WIDTH = 8)(
 always@(posedge clk, posedge rst)
 begin
      if(rst) q<= 0;
-     else if(en) q[7:0] = d[7:0];
-     else q[7:0] <= q[7:0];
+     else if(en) q[WIDTH-1:0] = d[WIDTH-1:0];
+     else q[WIDTH-1:0] <= q[WIDTH-1:0];
 end
 endmodule
