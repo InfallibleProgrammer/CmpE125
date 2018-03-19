@@ -1300,3 +1300,20 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_para
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_multiplier_top.v", 3); // k (j, cj)
 // Elapsed time: 13 seconds
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_parallel_multiplier.v", 4); // k (j, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 57 MB. Current time: 3/17/18 6:54:36 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 56 MB. Current time: 3/17/18 8:41:17 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 55 MB. Current time: 3/17/18 9:11:17 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 55 MB. Current time: 3/17/18 9:41:17 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 57 MB. Current time: 3/17/18 10:11:17 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 57 MB. Current time: 3/17/18 10:41:18 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 55 MB. Current time: 3/17/18 11:11:18 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 56 MB. Current time: 3/17/18 11:41:18 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 56 MB. Current time: 3/18/18 12:11:19 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 57 MB. Current time: 3/18/18 12:41:19 AM PDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 57 MB. Current time: 3/18/18 4:02:11 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 56 MB. Current time: 3/18/18 7:17:03 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 56 MB. Current time: 3/18/18 10:32:32 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 56 MB. Current time: 3/18/18 1:48:04 PM PDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
