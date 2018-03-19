@@ -37,13 +37,13 @@ module parallel_multiplier_top(
 	wire [3:0] PP0;
 
 	wire [7:0] PP0_PP1_in;
-	wire [7:0]  PP0_PP1;
+	wire [7:0] PP0_PP1;
 	wire [7:0] PP2_PP3_in;
 	wire [7:0] PP2_PP3;
 
-	wire temp;
-
 	wire [7:0] prod;
+
+	wire temp;
 
 	pip_reg #(4) pipA(
 		.d(inA),
@@ -99,20 +99,36 @@ module parallel_multiplier_top(
 		.Cout (temp)
 		);
 
+	pip_reg #(8) PP0_PP1reg(
+		.d(PP0_PP1),
+		.clk(clk),
+		.rst(rst),
+		.en(en),
+		.q(PP0_PP1_in)
+	);
+
+	pip_reg #(8) PP2_PP3reg(
+		.d(PP2_PP3),
+		.clk(clk),
+		.rst(rst),
+		.en(en),
+		.q(PP2_PP3_in)
+	);
+
 	adder_8bit PP_FINAL(
-		.A (PP0_PP1),
-		.B (PP2_PP3),
+		.A (PP0_PP1_in),
+		.B (PP2_PP3_in),
 		.Cin (0),
 		.sum (prod),
 		.Cout (temp)
 		);
 
-	pip_reg #(8) PP2_PP3reg(
+	pip_reg #(8) OUT(
 		.d(prod),
 		.clk(clk),
 		.rst(rst),
 		.en(en),
 		.q(P)
 	);
-
+	
 endmodule

@@ -31,8 +31,6 @@ module tb_para_mult();
 	reg        en;
 	wire [7:0] P;
 
-    reg [7:0] in;
-    reg [7:0] out;
 
 	parallel_multiplier_top DUT(
 		.inA  (A),
@@ -51,7 +49,7 @@ module tb_para_mult();
 
 	initial begin
 
-        clk = 0;
+        clk = 1;
         rst = 0;
         en = 1;
 
@@ -62,24 +60,19 @@ module tb_para_mult();
             begin
                 B = i_B;
 
-                out = in;
-                in = A * B;
 
-                #5 clk = 1;
-                #5 clk = 0;
-                if((P === 8'bx) || (P == out) );
-                else 
+                #1 clk = ~clk;
+                #1 clk = ~clk;
+
+                #1 clk = ~clk;
+                #1 clk = ~clk;
+
+                #1 clk = ~clk;
+                #1 clk = ~clk;
+
+                if (P != A * B)
                 begin
                     error = error + 1;
-                    $display("error in out. P: %d out: %d", P, out);    
-                end
-                
-                #5 clk = 1;
-                #5 clk = 0;
-                if(P != in)
-                begin
-                    error = error + 1;
-                    $display("error in IN. P: %d IN: %d", P, in);
                 end
             end
         end

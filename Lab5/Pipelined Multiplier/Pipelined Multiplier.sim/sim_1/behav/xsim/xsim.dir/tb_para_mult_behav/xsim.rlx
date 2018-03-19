@@ -1,6 +1,10 @@
 
 { 
+<<<<<<< HEAD
     crc :  4597535273059098413  , 
+=======
+    crc :  6659664471172030859  , 
+>>>>>>> f12426c5cf62ff1d2aeb313ea42e2c8009021e19
     ccp_crc :  0  , 
     cmdline : " -wto abaf41c45650474e9dea4a8a943ed29b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_para_mult_behav xil_defaultlib.tb_para_mult xil_defaultlib.glbl" , 
     buildDate : "Jan 30 2018" , 
