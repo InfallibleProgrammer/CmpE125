@@ -31,6 +31,9 @@ module tb_para_mult();
 	reg        en;
 	wire [7:0] P;
 
+    reg [7:0] stage1;
+    reg [7:0] stage2;
+    reg [7:0] stage3;
 
 	parallel_multiplier_top DUT(
 		.inA  (A),
@@ -60,22 +63,33 @@ module tb_para_mult();
             begin
                 B = i_B;
 
+                stage3 = stage2;
+                stage2 = stage1;
+                stage1 = A * B;
 
                 #1 clk = ~clk;
                 #1 clk = ~clk;
 
-                #1 clk = ~clk;
-                #1 clk = ~clk;
 
-                #1 clk = ~clk;
-                #1 clk = ~clk;
-
-                if (P != A * B)
+                //try not ===
+                if ((P == stage3) || (stage3 === 8'bx));
+                else
                 begin
                     error = error + 1;
+                    $display("Error in stage 3. P: %d stage3: %d", P, stage3);
                 end
             end
         end
+
+        #1 clk = ~clk;
+        #1 clk = ~clk;
+
+        if (P != stage2) error = error + 1;
+
+        #1 clk = ~clk;
+        #1 clk = ~clk;
+
+        if (P != stage1) error = error + 1;
 
         if (error == 0)
         begin
