@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
          "-log parallel_mult_fpga.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source parallel_mult_fpga.tcl -notrace" );
 
