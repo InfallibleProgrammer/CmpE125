@@ -1,0 +1,332 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Mon Apr  2 16:04:01 2018
+# Process ID: 12588
+# Current directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.runs/synth_1
+# Command line: vivado.exe -log FIFO_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIFO_fpga.tcl
+# Log file: C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.runs/synth_1/FIFO_fpga.vds
+# Journal file: C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIFO_fpga.tcl -notrace
+Command: synth_design -top FIFO_fpga -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13664 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 344.410 ; gain = 100.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIFO_fpga' [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/FIFO_fpga.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_gen' [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/clk_gen.v:22]
+INFO: [Synth 8-256] done synthesizing module 'clk_gen' (1#1) [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/clk_gen.v:22]
+INFO: [Synth 8-638] synthesizing module 'button_debouncer' [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/debounce2.v:23]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'button_debouncer' (2#1) [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/debounce2.v:23]
+INFO: [Synth 8-638] synthesizing module 'FIFO' [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-5788] Register Q_reg in module FIFO is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'Q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "Q_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'FIFO' (3#1) [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FIFO_fpga' (4#1) [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/FIFO_fpga.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 396.738 ; gain = 152.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 396.738 ; gain = 152.773
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/constrs_1/new/FIFO.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{clk100MHz}' is not supported in the xdc constraint file. [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/constrs_1/new/FIFO.xdc:2]
+Finished Parsing XDC File [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/constrs_1/new/FIFO.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/constrs_1/new/FIFO.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 740.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 740.520 ; gain = 496.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 740.520 ; gain = 496.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 740.520 ; gain = 496.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_4sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "debounced_button0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element r_ptr_reg was removed.  [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/FIFO.v:44]
+WARNING: [Synth 8-6014] Unused sequential element w_ptr_reg was removed.  [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/FIFO.v:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 740.520 ; gain = 496.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module FIFO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element clk_g/count1_reg was removed.  [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/clk_gen.v:29]
+WARNING: [Synth 8-6014] Unused sequential element clk_g/clk_4sec_reg was removed.  [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/clk_gen.v:29]
+INFO: [Synth 8-5545] ROM "clk_g/count2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_g/clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "but/debounced_button0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Q/w_ptr_reg was removed.  [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/FIFO.v:45]
+WARNING: [Synth 8-6014] Unused sequential element Q/r_ptr_reg was removed.  [C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.srcs/sources_1/new/FIFO.v:44]
+INFO: [Synth 8-3886] merging instance 'out_reg__0i_7' (FDPE) to 'out_reg__0i_5'
+INFO: [Synth 8-3886] merging instance 'out_reg__0i_6' (FDPE) to 'out_reg__0i_5'
+INFO: [Synth 8-3886] merging instance 'out_reg__0i_5' (FDPE) to 'out_reg__0i_4'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 740.520 ; gain = 496.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 740.520 ; gain = 496.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 740.520 ; gain = 496.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 758.488 ; gain = 514.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 758.488 ; gain = 514.523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 758.488 ; gain = 514.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 758.488 ; gain = 514.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 758.488 ; gain = 514.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 758.488 ; gain = 514.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 758.488 ; gain = 514.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     4|
+|4     |LUT2   |     2|
+|5     |LUT3   |     4|
+|6     |LUT4   |     6|
+|7     |LUT5   |    21|
+|8     |LUT6   |    12|
+|9     |MUXF7  |     4|
+|10    |FDCE   |    13|
+|11    |FDRE   |    82|
+|12    |IBUF   |     9|
+|13    |OBUF   |     2|
+|14    |OBUFT  |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |   173|
+|2     |  Q      |FIFO             |    79|
+|3     |  but    |button_debouncer |    20|
+|4     |  clk_g  |clk_gen          |    56|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 758.488 ; gain = 514.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 758.488 ; gain = 170.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 758.488 ; gain = 514.523
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 8 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 759.750 ; gain = 528.777
+INFO: [Common 17-1381] The checkpoint 'C:/Users/avach/Documents/GitHub/CmpE125/Lab6/FIFO/FIFO.runs/synth_1/FIFO_fpga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FIFO_fpga_utilization_synth.rpt -pb FIFO_fpga_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 759.750 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  2 16:05:06 2018...
