@@ -1,3 +1,4 @@
 Vivado Simulator 2017.4
 Time resolution is 1 ps
 Simulation finished. No errors.
+$finish called at time : 122 ns : File "C:/Users/bcgni/Documents/School/Spring 2018/CmpE125/Projects/Lab6/FIFO/FIFO.srcs/sim_1/new/FIFO_tb.v" Line 180

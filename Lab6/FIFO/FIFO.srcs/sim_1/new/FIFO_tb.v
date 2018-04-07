@@ -83,7 +83,7 @@ module FIFO_tb();
             begin
                 wnr = 0;
                 //data itself is irrelevant just need to load some data
-                in = i_in + 1;
+                in = i_in + 4;
                 #1 clk = ~clk;
                 #1 clk = ~clk;
             end
@@ -132,7 +132,7 @@ module FIFO_tb();
                 wnr = 1;
                 #1 clk = ~clk;
                 #1 clk = ~clk;
-                if ((out != i_in + 1) || (out == 0))
+                if (out != i_in + 4)
                 begin
                     error = error + 1;
                     $display("Data has the incorrect value");
@@ -177,7 +177,7 @@ module FIFO_tb();
         begin
             $display("Errors found in simulation: %d", error);
         end
-
+        $finish;
     end
 
 endmodule
