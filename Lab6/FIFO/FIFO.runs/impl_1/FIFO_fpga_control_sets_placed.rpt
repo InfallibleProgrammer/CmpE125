@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
-| Date         : Mon Apr  2 16:06:08 2018
+| Date         : Sat Apr  7 15:08:50 2018
 | Host         : DESKTOP-E17FLM2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file FIFO_fpga_control_sets_placed.rpt
 | Design       : FIFO_fpga
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              17 |            3 |
+| No           | No                    | No                     |              17 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              33 |           10 |
-| Yes          | No                    | No                     |              32 |            9 |
-| Yes          | No                    | Yes                    |              13 |            5 |
+| Yes          | No                    | No                     |              32 |           10 |
+| Yes          | No                    | Yes                    |              13 |            6 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -48,18 +48,18 @@ Table of Contents
 +----------------------+--------------------+------------------+------------------+----------------+
 |     Clock Signal     |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------------+--------------------+------------------+------------------+----------------+
+|  debo_BUFG           | Q/Q[2][3]_i_1_n_0  |                  |                1 |              4 |
+|  debo_BUFG           | Q/Q[6][3]_i_1_n_0  |                  |                3 |              4 |
+|  debo_BUFG           | Q/Q[3][3]_i_1_n_0  |                  |                1 |              4 |
 |  debo_BUFG           | Q/Q[4][3]_i_1_n_0  |                  |                1 |              4 |
+|  debo_BUFG           | Q/Q[7][3]_i_1_n_0  |                  |                1 |              4 |
 |  debo_BUFG           | Q/Q[0][3]_i_1_n_0  |                  |                1 |              4 |
 |  debo_BUFG           | Q/Q[1][3]_i_1_n_0  |                  |                1 |              4 |
 |  debo_BUFG           | Q/Q[5][3]_i_1_n_0  |                  |                1 |              4 |
-|  debo_BUFG           | Q/Q[3][3]_i_1_n_0  |                  |                1 |              4 |
-|  debo_BUFG           | Q/Q[6][3]_i_1_n_0  |                  |                1 |              4 |
-|  debo_BUFG           | Q/Q[7][3]_i_1_n_0  |                  |                2 |              4 |
-|  debo_BUFG           | Q/Q[2][3]_i_1_n_0  |                  |                1 |              4 |
-|  debo_BUFG           | Q/r_ptr[3]_i_1_n_0 | RST_IBUF         |                1 |              4 |
+|  debo_BUFG           | Q/r_ptr[3]_i_1_n_0 | RST_IBUF         |                2 |              4 |
 |  debo_BUFG           | Q/w_ptr[3]_i_1_n_0 | RST_IBUF         |                1 |              4 |
 |  debo_BUFG           | Q/E[0]             | RST_IBUF         |                3 |              5 |
-|  clk_g/CLK           |                    |                  |                3 |             17 |
+|  clk_g/CLK           |                    |                  |                4 |             17 |
 |  clk100MHz_IBUF_BUFG |                    | RST_IBUF         |               10 |             33 |
 +----------------------+--------------------+------------------+------------------+----------------+
 
