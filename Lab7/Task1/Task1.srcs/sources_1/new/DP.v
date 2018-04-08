@@ -1,10 +1,13 @@
 `timescale 1ns / 1ps
 
 module DP(in1, in2, s1, clk, wa, we, raa, rea, rab, reb, c, s2, out);
+  
     input [2:0] in1, in2;
     input [1:0] s1, wa, raa, rab, c;
     input we, rea, reb, s2, clk;
     output [2:0] out;
+
+
     wire [2:0] mux1out;
     wire [2:0] douta;
     wire [2:0] doutb;
