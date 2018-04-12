@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
-| Date             : Sat Apr  7 15:09:32 2018
+| Date             : Sat Apr  7 15:21:44 2018
 | Host             : DESKTOP-E17FLM2 running 64-bit major release  (build 9200)
 | Command          : report_power -file FIFO_fpga_power_routed.rpt -pb FIFO_fpga_power_summary_routed.pb -rpx FIFO_fpga_power_routed.rpx
 | Design           : FIFO_fpga
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.875        |
+| Total On-Chip Power (W)  | 1.888        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.772        |
+| Dynamic (W)              | 1.784        |
 | Device Static (W)        | 0.104        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 76.4         |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.162 |      163 |       --- |             --- |
-|   LUT as Logic |     0.120 |       43 |     63400 |            0.07 |
+| Slice Logic    |     0.170 |      163 |       --- |             --- |
+|   LUT as Logic |     0.128 |       43 |     63400 |            0.07 |
 |   CARRY4       |     0.019 |        8 |     15850 |            0.05 |
 |   Register     |     0.017 |       95 |    126800 |            0.07 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |        5 |       --- |             --- |
 |   F7/F8 Muxes  |     0.000 |        4 |     63400 |           <0.01 |
-| Signals        |     0.221 |      137 |       --- |             --- |
+| Signals        |     0.225 |      137 |       --- |             --- |
 | I/O            |     1.389 |       15 |       210 |            7.14 |
 | Static Power   |     0.104 |          |           |                 |
-| Total          |     1.875 |          |           |                 |
+| Total          |     1.888 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.436 |       0.415 |      0.021 |
+| Vccint    |       1.000 |     0.448 |       0.427 |      0.021 |
 | Vccaux    |       1.800 |     0.068 |       0.050 |      0.019 |
 | Vcco33    |       3.300 |     0.388 |       0.384 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -139,10 +139,10 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| FIFO_fpga |     1.772 |
-|   Q       |     0.139 |
+| FIFO_fpga |     1.784 |
+|   Q       |     0.148 |
 |   but     |     0.000 |
-|   clk_g   |     0.178 |
+|   clk_g   |     0.188 |
 +-----------+-----------+
 
 
