@@ -1,30 +1,40 @@
 `timescale 1ns / 1ps
 
 module FSM(
-    input        Go,
-    input  [1:0] Op,
-    input        clk,
-    output [1:0] s1,
-    output [1:0] wa,
-    output       we,
-    output [1:0] raa,
-    output       rea,
-    output [1:0] rab,
-    output       reb,
-    output [1:0] c,
-    output       s2,
-    output [3:0] CS,
-    output       Done
+    input            Go,
+    input      [1:0] Op,
+    input            clk,
+    output reg [1:0] s1,
+    output reg [1:0] wa,
+    output reg       we,
+    output reg [1:0] raa,
+    output reg       rea,
+    output reg [1:0] rab,
+    output reg       reb,
+    output reg [1:0] c,
+    output reg       s2,
+    output reg [3:0] CS,
+    output reg       Done
     );
 
-    reg [3:0] next_state;
+    parameter out0   = 15'b_01_00_0_00_0_00_0_00_0_0,  
+              out1   = 15'b_11_01_1_00_0_00_0_00_0_0,
+              out2   = 15'b_10_10_1_00_0_00_0_00_0_0,
+              out3_3 = 15'b_00_11_1_01_1_10_1_00_0_0, //3
+              out3_2 = 15'b_00_11_1_01_1_10_1_01_0_0, //2
+              out3_1 = 15'b_00_11_1_01_1_10_1_10_0_0, //1
+              out3_0 = 15'b_00_11_1_01_1_10_1_11_0_0, //0
+              out4   = 15'b_01_00_0_11_1_11_1_10_1_1;
 
-    //sequential logic
+    reg [3:0]  next_state;
+    reg [14:0] out_sig;
+
+        //sequential logic
     always @ (posedge clk)
     begin
         CS = next_state;    
     end
-
+    
     //state transitions
     always @ (CS, Go)
     begin
@@ -37,114 +47,38 @@ module FSM(
         2: next_state = 3;
         3: next_state = 4;
         4: next_state = 0; 
+        default: next_state = 0;
         endcase
+    end
         
     //output logic
     always @ (CS)
     begin
         case (CS)
-            0 : begin
-                    s1 =   2'b01;
-                    wa =   2'b00;
-                    we =   0;
-                    raa =  2'b00;
-                    rea =  0;
-                    rab =  2'b00;
-                    reb =  0;
-                    c =    2'b00;
-                    s2 =   0;
-                    Done = 0;
-                end
-            1 : begin
-                    s1 =   2'b11;
-                    wa =   2'b01;
-                    we =   1;
-                    raa =  2'b00;
-                    rea =  0;
-                    rab =  2'b00;
-                    reb =  0;
-                    c =    2'b00;
-                    s2 =   0;
-                    Done = 0;
-                end
-            2 : begin
-                    s1 =   2'b10;
-                    wa =   2'b10;
-                    we =   1;
-                    raa =  2'b00;
-                    rea =  0;
-                    rab =  2'b00;
-                    reb =  0;
-                    c =    2'b00;
-                    s2 =   0;
-                    Done = 0;
-                end
-            3 : begin
+            0: out_sig = out0;
+            1: out_sig = out1;
+            2: out_sig = out2;
+            3: begin
                     case (Op) 
-                    3:  begin     
-                            s1 =   2'b00;
-                            wa =   2'b11;
-                            we =   1;
-                            raa =  2'b01;
-                            rea =  1;
-                            rab =  2'b10;
-                            reb =  1;
-                            c =    2'b00;
-                            s2 =   0;
-                            Done = 0;
-                        end
-                    2:  begin
-                            s1 =   2'b00;
-                            wa =   2'b11;
-                            we =   1;
-                            raa =  2'b01;
-                            rea =  1;
-                            rab =  2'b10;
-                            reb =  1;
-                            c =    2'b01;
-                            s2 =   0;
-                            Done = 0;
-                        end
-                    1 : begin
-                            s1 =   2'b00;
-                            wa =   2'b11;
-                            we =   1;
-                            raa =  2'b01;
-                            rea =  1;
-                            rab =  2'b10;
-                            reb =  1;
-                            c =    2'b10;
-                            s2 =   0;
-                            Done = 0;
-                        end
-                    
-                    0 : begin
-                            s1 =   2'b00;
-                            wa =   2'b11;
-                            we =   1;
-                            raa =  2'b01;
-                            rea =  1;
-                            rab =  2'b10;
-                            reb =  1;
-                            c =    2'b11;
-                            s2 =   0;
-                            Done = 0;
-                        end
+                    3: out_sig = out3_3;
+                    2: out_sig = out3_2;
+                    1: out_sig = out3_1;
+                    0: out_sig = out3_0;
                     endcase
                 end
-            4 : begin
-                    s1 =   2'b01;
-                    wa =   2'b00;
-                    we =   0;
-                    raa =  2'b11;
-                    rea =  1;
-                    rab =  2'b11;
-                    reb =  1;
-                    c =    2'b10;
-                    s2 =   1;
-                    Done = 1;
-                end
+            4: out_sig = out4;
         endcase
+        
+        s1 =   out_sig[14:13];
+        wa =   out_sig[12:11];
+        we =   out_sig[10];
+        raa =  out_sig[9:8];
+        rea =  out_sig[7];
+        rab =  out_sig[6:5];
+        reb =  out_sig[4];
+        c =    out_sig[3:2];
+        s2 =   out_sig[1];
+        Done = out_sig[0];
     end
 
 endmodule
