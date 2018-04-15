@@ -13,7 +13,7 @@ module FSM(
     output reg       reb,
     output reg [1:0] c,
     output reg       s2,
-    output reg [3:0] CS,
+    output reg [2:0] CS,
     output reg       Done
     );
 
@@ -26,7 +26,7 @@ module FSM(
               out3_0 = 15'b_00_11_1_01_1_10_1_11_0_0, //0
               out4   = 15'b_01_00_0_11_1_11_1_10_1_1;
 
-    reg [3:0]  next_state;
+    reg [2:0]  next_state;
     reg [14:0] out_sig;
 
     always @ (posedge clk)
@@ -64,10 +64,10 @@ module FSM(
             2: out_sig = out2;
             3: begin
                     case (Op) 
-                    3: out_sig = out3_3;
-                    2: out_sig = out3_2;
-                    1: out_sig = out3_1;
-                    0: out_sig = out3_0;
+                        3: out_sig = out3_3;
+                        2: out_sig = out3_2;
+                        1: out_sig = out3_1;
+                        0: out_sig = out3_0;
                     endcase
                 end
             4: out_sig = out4;
