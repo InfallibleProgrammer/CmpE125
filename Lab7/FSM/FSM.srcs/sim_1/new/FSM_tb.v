@@ -57,9 +57,6 @@ module FSM_tb();
 
   initial begin
     error = 0;
-    
-    Go = 0; 
-    clk_pulse;
 
     for (i_Op = 0; i_Op < 4; i_Op = i_Op + 1)
     begin
@@ -68,33 +65,35 @@ module FSM_tb();
         Go = 0;
         clk_pulse;
         //state 0
-        if ({s1,wa,we,raa,rea,rab,reb,c,s2,CS,Done} != out0) error = error + 1;
-        
+        if ({s1,wa,we,raa,rea,rab,reb,c,s2,Done} != out0) error = error + 1;
+        clk_pulse;
+
         Go = 1;
 
         //state 1
         clk_pulse;
-        if ({s1,wa,we,raa,rea,rab,reb,c,s2,CS,Done} != out1) error = error + 1;
+        if ({s1,wa,we,raa,rea,rab,reb,c,s2,Done} != out1) error = error + 1;
 
         //state 2
         clk_pulse;
-        if ({s1,wa,we,raa,rea,rab,reb,c,s2,CS,Done} != out2) error = error + 1;
+        if ({s1,wa,we,raa,rea,rab,reb,c,s2,Done} != out2) error = error + 1;
 
         //state 3 where Op is used
         clk_pulse;
-        case (Op)
-        3: if ({s1,wa,we,raa,rea,rab,reb,c,s2,CS,Done} != out3_3) error = error + 1;
-        2: if ({s1,wa,we,raa,rea,rab,reb,c,s2,CS,Done} != out3_2) error = error + 1;
-        1: if ({s1,wa,we,raa,rea,rab,reb,c,s2,CS,Done} != out3_1) error = error + 1;
-        0: if ({s1,wa,we,raa,rea,rab,reb,c,s2,CS,Done} != out3_0) error = error + 1;
+        case (i_Op)
+        3: if ({s1,wa,we,raa,rea,rab,reb,c,s2,Done} != out3_3) error = error + 1;
+        2: if ({s1,wa,we,raa,rea,rab,reb,c,s2,Done} != out3_2) error = error + 1;
+        1: if ({s1,wa,we,raa,rea,rab,reb,c,s2,Done} != out3_1) error = error + 1;
+        0: if ({s1,wa,we,raa,rea,rab,reb,c,s2,Done} != out3_0) error = error + 1;
         endcase
         
         //state 4
         clk_pulse;
-        if ({s1,wa,we,raa,rea,rab,reb,c,s2,CS,Done} != out0) error = error + 1;
-        
-        //should transition back to state 0
+        if ({s1,wa,we,raa,rea,rab,reb,c,s2,Done} != out4) begin error = error + 1; $display("Here");end
+
+        //transition back to state 0
         clk_pulse;
+        
     end
 
     if (error == 0) $display("Simulation completed. No errors.");

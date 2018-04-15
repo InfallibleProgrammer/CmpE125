@@ -29,7 +29,6 @@ module FSM(
     reg [3:0]  next_state;
     reg [14:0] out_sig;
 
-        //sequential logic
     always @ (posedge clk)
     begin
         CS = next_state;    
@@ -50,6 +49,11 @@ module FSM(
         default: next_state = 0;
         endcase
     end
+
+    always @ (out_sig)
+    begin
+        {s1,wa,we,raa,rea,rab,reb,c,s2,Done} = out_sig;
+    end
         
     //output logic
     always @ (CS)
@@ -68,17 +72,6 @@ module FSM(
                 end
             4: out_sig = out4;
         endcase
-        
-        s1 =   out_sig[14:13];
-        wa =   out_sig[12:11];
-        we =   out_sig[10];
-        raa =  out_sig[9:8];
-        rea =  out_sig[7];
-        rab =  out_sig[6:5];
-        reb =  out_sig[4];
-        c =    out_sig[3:2];
-        s2 =   out_sig[1];
-        Done = out_sig[0];
     end
 
 endmodule
