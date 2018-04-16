@@ -8,7 +8,7 @@ module RF(clk, rea, reb, raa, rab, we, wa, din, douta, doutb);
     output reg [2:0] douta, doutb;
     reg [2:0] RegFile [3:0];
 
-    always @(rea, reb, raa, rab)
+    always @(*)
     begin
         if (rea)
             douta = RegFile[raa];

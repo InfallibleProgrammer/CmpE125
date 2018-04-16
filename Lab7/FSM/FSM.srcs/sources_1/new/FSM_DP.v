@@ -7,7 +7,7 @@ module FSM_DP(
     input  [2:0] In2,
     input        clk,
     output [2:0] CS,
-    output Done,
+    output       Done,
     output [2:0] Out
 );
 

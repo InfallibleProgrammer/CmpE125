@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 16 10:17:26 2018
+# Process ID: 6992
+# Current directory: C:/Users/bcgni/Downloads/CmpE125Git/Lab7/FSM/FSM.runs/impl_1
+# Command line: vivado.exe -log FSM_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FSM_fpga.tcl -notrace
+# Log file: C:/Users/bcgni/Downloads/CmpE125Git/Lab7/FSM/FSM.runs/impl_1/FSM_fpga.vdi
+# Journal file: C:/Users/bcgni/Downloads/CmpE125Git/Lab7/FSM/FSM.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source FSM_fpga.tcl -notrace

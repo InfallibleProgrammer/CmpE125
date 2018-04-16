@@ -2,7 +2,7 @@
 
 module FSM_DP_tb();
 
-    reg Go;
+    reg        Go;
     reg  [1:0] Op;
     reg  [2:0] In1;
     reg  [2:0] In2;
@@ -23,10 +23,10 @@ module FSM_DP_tb();
     );
 
     task clk_pulse;
-        begin 
-            #5 clk = 1;
-            #5 clk = 0;
-        end
+    begin 
+        #5 clk = 1;
+        #5 clk = 0;
+    end
     endtask
 
     integer error;
@@ -37,6 +37,7 @@ module FSM_DP_tb();
     initial begin
     
         error = 0;
+        Go = 0;
 
         for (i_In1 = 0; i_In1 < 8; i_In1 = i_In1 + 1)
         begin
@@ -49,57 +50,57 @@ module FSM_DP_tb();
                     Op = i_Op;
 
                     //tick clock through each state and check for each one
-                    //out only available in state 4
+                    //output only available in state 4
 
-                    ///////////
+                    Go = 0;
+                    ////////////
                     //State 0//
                     ///////////
-                    Go = 0;
+                    if ((CS != 0) | (Done != 0) | (Out != 0)) error = error + 1;
                     clk_pulse;
-                    if ((CS != 0) || (Done != 0) || (Out != 0)) error = error + 1;
-
-                    Go = 1;
-
-                    ///////////
+                   
+                    ////////////
                     //State 1//
-                    ///////////
+                    ///////////                   
+                    Go = 1;
                     clk_pulse;
-                    if ((CS != 1) || (Done != 0) || (Out != 0)) error = error + 1;
+                    if ((CS != 1) | (Done != 0) | (Out != 0)) error = error + 1;
 
-                    ///////////
+                    ////////////
                     //State 2//
                     ///////////
                     clk_pulse;
-                    if ((CS != 2) || (Done != 0) || (Out != 0)) error = error + 1;
+                    if ((CS != 2) | (Done != 0) | (Out != 0)) error = error + 1;
 
-                    ///////////
+                    ////////////
                     //State 3//
                     ///////////
                     clk_pulse;
-                    if ((CS != 3) || (Done != 0) || (Out != 0)) error = error + 1;
+                    if ((CS != 3) | (Done != 0) | (Out != 0)) error = error + 1;
 
-                    ///////////
+                    ////////////
                     //State 4//
                     ///////////
                     clk_pulse;
-                    if ((CS != 4) || (Done != 1)) error = error + 1;
+                    if ((CS != 4) | (Done != 1)) error = error + 1;
 
                     //check Op
-                    case (Op)
+                    case (i_Op)
                         //in1 ^ in2
-                        0: if (Out != In1 ^ In2) error = error + 1;
+                        0: if (Out != (In1 ^ In2)) error = error + 1;
                         //in1 & in2
-                        1: if (Out != In1 & In2) error = error + 1;
+                        1: if (Out != (In1 & In2)) error = error + 1;
                         //in1 - in2
-                        2: if (Out != In1 - In2) error = error + 1;
+                        2: if (Out != (In1 - In2)) error = error + 1;
                         //in1 + in2
-                        3: if (Out != In1 + In2) error = error + 1; 
+                        3: if (Out != (In1 + In2)) error = error + 1; 
                     endcase
                 
                     ///////////////////
                     //Back to State 0//
                     //////////////////
                     clk_pulse;
+                    if ((CS != 0) | (Done != 0) | (Out != 0)) error = error + 1;
                 end
             end
         end

@@ -14,7 +14,7 @@ module FSM_tb();
   wire reb;
   wire [1:0] c;
   wire s2;
-  wire [3:0] CS;
+  wire [2:0] CS;
   wire Done;
   
 

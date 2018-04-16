@@ -1,40 +1,26 @@
-module led_mux (clk, rst, LED0, LED1, LED2, LED3, LEDOUT, LEDSEL);
-    input clk, rst;
-    input [7:0] LED0, LED1, LED2, LED3;
-    output[3:0] LEDSEL;
-    output[7:0] LEDOUT;
-    reg [3:0] LEDSEL;
-    reg [7:0] LEDOUT;
-    reg [1:0] index;
+module led_mux
+(input clk, rst, input [7:0] LED7, LED6, LED5, LED4, LED3, LED2, LED1, LED0,
+output [7:0] LEDSEL, LEDOUT);
 
-    always @(posedge clk)
-    begin
-        if(rst) index = 0;
-        else index = index + 2'd1;
-    end
+    reg [2:0] index;
+    reg [15:0] led_ctrl;
+    assign {LEDSEL, LEDOUT} = led_ctrl;
 
-    always @(index,LED0,LED1,LED2,LED3)
+    always @ (posedge clk) index <= (rst) ? 3'b0 : (index + 3'd1);
+
+    always @ (index, LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7)
     begin
-        case(index)
-            0: begin
-            LEDSEL = 4'b1110;
-            LEDOUT = LED0;
-            end
-            1: begin
-            LEDSEL = 4'b1101;
-            LEDOUT = LED1;
-            end
-            2: begin
-            LEDSEL = 4'b1011;
-            LEDOUT = LED2;
-            end
-            3: begin
-            LEDSEL = 4'b0111;
-            LEDOUT = LED3;
-            end
-            default: begin
-            LEDSEL = 0; LEDOUT = 0;
-            end
+        case (index)
+            0: led_ctrl <= {8'b11111110, LED0};
+            1: led_ctrl <= {8'b11111101, LED1};
+            2: led_ctrl <= {8'b11111011, LED2};
+            3: led_ctrl <= {8'b11110111, LED3};
+            4: led_ctrl <= {8'b11101111, LED4};
+            5: led_ctrl <= {8'b11011111, LED5};
+            6: led_ctrl <= {8'b10111111, LED6};
+            7: led_ctrl <= {8'b01111111, LED7};
+            default: led_ctrl <= {8'b11111111, 8'hFF};
         endcase
     end
-endmodule // end led_mux
+
+endmodule
