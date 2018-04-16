@@ -14,6 +14,8 @@ module FSM_fpga(
     output [7:0] LEDOUT
 );
 
+    //temp
+
     wire DONT_USE;
     wire clk_5KHz;
     wire debo;
