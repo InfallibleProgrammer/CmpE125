@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module led_mux
 (input clk, rst, input [7:0] LED7, LED6, LED5, LED4, LED3, LED2, LED1, LED0,
 output [7:0] LEDSEL, LEDOUT);

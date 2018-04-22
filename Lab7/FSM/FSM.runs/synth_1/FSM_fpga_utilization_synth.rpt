@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Apr 16 10:17:19 2018
+| Date         : Mon Apr 16 14:37:51 2018
 | Host         : DESKTOP-OT07JBV running 64-bit major release  (build 9200)
 | Command      : report_utilization -file FSM_fpga_utilization_synth.rpt -pb FSM_fpga_utilization_synth.pb
 | Design       : FSM_fpga
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |   58 |     0 |     63400 |  0.09 |
-|   LUT as Logic             |   50 |     0 |     63400 |  0.08 |
+| Slice LUTs*                |   71 |     0 |     63400 |  0.11 |
+|   LUT as Logic             |   63 |     0 |     63400 |  0.10 |
 |   LUT as Memory            |    8 |     0 |     19000 |  0.04 |
 |     LUT as Distributed RAM |    8 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -149,14 +149,14 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |   58 |        Flop & Latch |
-| LUT3     |   19 |                 LUT |
-| LUT5     |   18 |                 LUT |
+| LUT6     |   20 |                 LUT |
+| LUT5     |   19 |                 LUT |
 | OBUF     |   17 |                  IO |
+| LUT3     |   16 |                 LUT |
 | RAMD32   |   12 |  Distributed Memory |
+| LUT2     |   12 |                 LUT |
 | IBUF     |   12 |                  IO |
 | LDCE     |    9 |        Flop & Latch |
-| LUT6     |    8 |                 LUT |
-| LUT2     |    8 |                 LUT |
 | CARRY4   |    8 |          CarryLogic |
 | LUT4     |    6 |                 LUT |
 | RAMS32   |    4 |  Distributed Memory |

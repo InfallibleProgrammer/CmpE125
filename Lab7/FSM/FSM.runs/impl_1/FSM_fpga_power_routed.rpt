@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Mon Apr 16 10:19:10 2018
+| Date             : Mon Apr 16 14:39:45 2018
 | Host             : DESKTOP-OT07JBV running 64-bit major release  (build 9200)
 | Command          : report_power -file FSM_fpga_power_routed.rpt -pb FSM_fpga_power_summary_routed.pb -rpx FSM_fpga_power_routed.rpx
 | Design           : FSM_fpga
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.131        |
+| Total On-Chip Power (W)  | 0.126        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.033        |
+| Dynamic (W)              | 0.029        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.4         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |      162 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |       50 |     63400 |            0.08 |
+| Slice Logic              |    <0.001 |      177 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |       62 |     63400 |            0.10 |
 |   CARRY4                 |    <0.001 |        8 |     15850 |            0.05 |
 |   Register               |    <0.001 |       67 |    126800 |            0.05 |
-|   Others                 |     0.000 |       11 |       --- |             --- |
+|   Others                 |     0.000 |       12 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |        8 |     19000 |            0.04 |
-| Signals                  |    <0.001 |      136 |       --- |             --- |
-| I/O                      |     0.032 |       29 |       210 |           13.81 |
+| Signals                  |    <0.001 |      148 |       --- |             --- |
+| I/O                      |     0.028 |       29 |       210 |           13.81 |
 | Static Power             |     0.097 |          |           |                 |
-| Total                    |     0.131 |          |           |                 |
+| Total                    |     0.126 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
+| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
-| Vcco33    |       3.300 |     0.013 |       0.009 |      0.004 |
+| Vcco33    |       3.300 |     0.012 |       0.008 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -141,7 +141,7 @@ Table of Contents
 +--------------------------------+-----------+
 | Name                           | Power (W) |
 +--------------------------------+-----------+
-| FSM_fpga                       |     0.033 |
+| FSM_fpga                       |     0.029 |
 |   FSMDP                        |    <0.001 |
 |     CU                         |    <0.001 |
 |     data_path                  |     0.000 |

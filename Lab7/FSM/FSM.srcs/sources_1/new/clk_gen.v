@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module clk_gen(clk100MHz, rst, clk_4sec, clk_5KHz);
 
     input clk100MHz, rst;

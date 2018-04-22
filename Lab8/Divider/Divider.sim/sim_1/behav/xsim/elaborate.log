@@ -1,0 +1,27 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 10b40396b81a440785836ae3a5a22d9c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DP_tb_behav xil_defaultlib.DP_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port d2 [C:/Users/bcgni/Downloads/CmpE125Git/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:36]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port SR [C:/Users/bcgni/Downloads/CmpE125Git/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:59]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port SL [C:/Users/bcgni/Downloads/CmpE125Git/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:71]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port SR [C:/Users/bcgni/Downloads/CmpE125Git/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:72]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port UD [C:/Users/bcgni/Downloads/CmpE125Git/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:94]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d2 [C:/Users/bcgni/Downloads/CmpE125Git/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:104]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d2 [C:/Users/bcgni/Downloads/CmpE125Git/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:111]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.shift_register(WIDTH=5)
+Compiling module xil_defaultlib.shift_register
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.subtractor
+Compiling module xil_defaultlib.ud_counter
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.DP
+Compiling module xil_defaultlib.DP_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DP_tb_behav

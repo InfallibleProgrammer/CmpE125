@@ -23,8 +23,8 @@ module FSM_fpga(
     wire [2:0] cs;
     wire [2:0] out;
 
-    wire [2:0] cs_led;
-    wire [2:0] out_led;
+    wire [7:0] cs_led;
+    wire [7:0] out_led;
 
     supply1 [7:0] vcc;
 
