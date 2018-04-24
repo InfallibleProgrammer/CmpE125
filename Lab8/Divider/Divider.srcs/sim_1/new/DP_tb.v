@@ -19,6 +19,7 @@ module DP_tb();
     reg        Y_LD;
     reg        count_LD;
     reg        count_CE;
+    wire       zero;
     wire [3:0] R;
     wire [3:0] Q;
     wire       R_lt_Y;
@@ -50,6 +51,7 @@ module DP_tb();
         .Y_LD         (Y_LD),
         .count_LD     (count_LD),
         .count_CE     (count_CE),
+        .zero         (zero),
         .R            (R),
         .Q            (Q),
         .R_lt_Y       (R_lt_Y),

@@ -18,6 +18,7 @@ module DP(
     input Y_LD,
     input count_LD,
     input count_CE,
+    output zero,
     output [3:0] R,
     output [3:0] Q,
     output R_lt_Y,
@@ -76,9 +77,10 @@ module DP(
     );
 
     comparator comp(
-        .a  (R_out),
-        .b  ({1'b0, Y_out}),
-        .lt (R_lt_Y)
+        .a   (R_out),
+        .b   ({1'b0, Y_out}),
+        .lt  (R_lt_Y),
+        .zero (zero)
     );
 
     subtractor sub(
