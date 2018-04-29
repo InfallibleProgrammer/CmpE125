@@ -18,7 +18,7 @@ module DP(
     input Y_LD,
     input count_LD,
     input count_CE,
-    output zero,
+    output DBZ,
     output [3:0] R,
     output [3:0] Q,
     output R_lt_Y,
@@ -64,7 +64,8 @@ module DP(
     );
 
     //making it a ordinary register (disabling shifting)
-    shift_register Y_shifter(
+    //check for divide by zero
+    Y_shift_register Y_shifter(
         .D       (Y),
         .LeftIn  (1'b0),
         .RightIn (1'b0),
@@ -73,14 +74,14 @@ module DP(
         .SR      (0),
         .RST     (rst),
         .CLK     (clk),
-        .Q       (Y_out)
+        .Q       (Y_out),
+        .DBZ     (DBZ)
     );
 
     comparator comp(
         .a   (R_out),
         .b   ({1'b0, Y_out}),
-        .lt  (R_lt_Y),
-        .zero (zero)
+        .lt  (R_lt_Y)
     );
 
     subtractor sub(

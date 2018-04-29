@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Divider.srcs/sources_1/new/CU.v" \
+"../../../../Divider.srcs/sources_1/new/DP.v" \
+"../../../../Divider.srcs/sources_1/new/Y_shift_register.v" \
+"../../../../Divider.srcs/sources_1/new/comparator.v" \
+"../../../../Divider.srcs/sources_1/new/divider.v" \
+"../../../../Divider.srcs/sources_1/new/mux2.v" \
+"../../../../Divider.srcs/sources_1/new/shift_register.v" \
+"../../../../Divider.srcs/sources_1/new/subtractor.v" \
+"../../../../Divider.srcs/sources_1/new/ud_counter.v" \
+"../../../../Divider.srcs/sim_1/new/divider_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
