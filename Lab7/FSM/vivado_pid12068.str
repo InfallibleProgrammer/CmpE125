@@ -1,0 +1,198 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 12068
+License: Customer
+
+Current time: 	Mon Apr 30 10:18:17 PDT 2018
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 98 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	D:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	avach
+User home directory: C:/Users/avach
+User working directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2017.4
+RDI_DATADIR: D:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: D:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/avach/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/avach/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/avach/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM/vivado.log
+Vivado journal file location: 	C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM/vivado.jou
+Engine tmp dir: 	C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM/.Xil/Vivado-12068-DESKTOP-3MQQUTJ
+
+GUI allocated memory:	181 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 639 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\avach\Documents\GitHub\CmpE125\Lab7\FSM\FSM.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM/FSM.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 66 MB (+67140kb) [00:00:06]
+// [Engine Memory]: 515 MB (+388213kb) [00:00:06]
+// Tcl Message: open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM/FSM.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/bcgni/Downloads/CmpE125Git/Lab7/FSM' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 97 MB (+28428kb) [00:00:07]
+// [Engine Memory]: 567 MB (+27412kb) [00:00:07]
+// [GUI Memory]: 128 MB (+27295kb) [00:00:09]
+// [Engine Memory]: 624 MB (+30831kb) [00:00:09]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 43 MB. Current time: 4/30/18 10:18:17 AM PDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 778.918 ; gain = 51.023 
+// Project name: FSM; location: C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM; part: xc7a100tcsg324-1
+// [Engine Memory]: 664 MB (+9240kb) [00:00:11]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), SegCS : bcd_to_7seg (bcd_to_7seg.v)]", 5, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), SegCS : bcd_to_7seg (bcd_to_7seg.v)]", 5, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), SegCS : bcd_to_7seg (bcd_to_7seg.v)]", 5, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_to_7seg.v", 1); // k (j, cj)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_to_7seg.v", 1); // k (j, cj)
+// [Engine Memory]: 703 MB (+6079kb) [00:01:52]
+// HMemoryUtils.trashcanNow. Engine heap size: 703 MB. GUI used memory: 52 MB. Current time: 4/30/18 10:20:01 AM PDT
+// Elapsed time: 59 seconds
+selectCodeEditor("bcd_to_7seg.v", 200, 473); // cd (w, cj)
+selectCodeEditor("bcd_to_7seg.v", 70, 319, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 24 seconds
+selectCodeEditor("bcd_to_7seg.v", 23, 140); // cd (w, cj)
+selectCodeEditor("bcd_to_7seg.v", 173, 12); // cd (w, cj)
+selectCodeEditor("bcd_to_7seg.v", 158, 38); // cd (w, cj)
+typeControlKey((HResource) null, "bcd_to_7seg.v", 'c'); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), clk_g : clk_gen (clk_gen.v)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), clk_g : clk_gen (clk_gen.v)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("clk_gen.v", 217, 119, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("clk_gen.v", 122, 161); // cd (w, cj)
+typeControlKey((HResource) null, "clk_gen.v", 'c'); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), LED : led_mux (lex_mux.v)]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), LED : led_mux (lex_mux.v)]", 7, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("lex_mux.v", 303, 237); // cd (w, cj)
+typeControlKey((HResource) null, "lex_mux.v", 'c'); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 18 seconds
+selectCodeEditor("FSM_fpga.v", 195, 248); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 65, 118, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("FSM_fpga.v", 34, 138); // cd (w, cj)
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), FSMDP : FSM_DP (FSM_DP.v)]", 4, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), FSMDP : FSM_DP (FSM_DP.v)]", 4, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_fpga.v", 4); // k (j, cj)
+selectCodeEditor("FSM_fpga.v", 107, 420); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 108, 420, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_fpga.v", 279, 351); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_DP.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_fpga.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_DP.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_fpga.v", 4); // k (j, cj)
+// Elapsed time: 59 seconds
+selectCodeEditor("FSM_fpga.v", 121, 311); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 24, 265, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 33 seconds
+selectCodeEditor("FSM_fpga.v", 344, 335); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 156, 338); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_fpga.v", 'c'); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 442, 224); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_DP.v", 5); // k (j, cj)
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_fpga.v", 4); // k (j, cj)
+// Elapsed time: 223 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), but : button_debouncer (debouncer.v)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_fpga (FSM_fpga.v), but : button_debouncer (debouncer.v)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("debouncer.v", 178, 374); // cd (w, cj)
+selectCodeEditor("debouncer.v", 86, 210, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_to_7seg.v", 1); // k (j, cj)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_gen.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 6); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_to_7seg.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_gen.v", 2); // k (j, cj)
+selectCodeEditor("clk_gen.v", 333, 162); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lex_mux.v", 3); // k (j, cj)
+selectCodeEditor("lex_mux.v", 409, 293); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_fpga.v", 4); // k (j, cj)
+// Elapsed time: 114 seconds
+selectCodeEditor("FSM_fpga.v", 178, 445); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 355, 456); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 412, 463); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 332, 353); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 386, 472); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_fpga.v", 'c'); // cd (w, cj)
+// Elapsed time: 27 seconds
+selectCodeEditor("FSM_fpga.v", 375, 415); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 363, 396); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_fpga.v", 'c'); // cd (w, cj)
+// Elapsed time: 24 seconds
+selectCodeEditor("FSM_fpga.v", 384, 395); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 628, 274); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 527, 395); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 130, 354); // cd (w, cj)
+selectCodeEditor("FSM_fpga.v", 292, 377); // cd (w, cj)
+// Elapsed time: 57 seconds
+selectCodeEditor("FSM_fpga.v", 133, 444); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_fpga.v", 'c'); // cd (w, cj)
+// Elapsed time: 38 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, FSM.xdc]", 12, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, FSM.xdc]", 12, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("FSM.xdc", 215, 261); // cd (w, cj)
+typeControlKey((HResource) null, "FSM.xdc", 'c'); // cd (w, cj)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 6); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_DP.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_fpga.v", 4); // k (j, cj)

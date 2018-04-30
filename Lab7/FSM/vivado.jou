@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 30 10:17:59 2018
+# Process ID: 12068
+# Current directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19356 C:\Users\avach\Documents\GitHub\CmpE125\Lab7\FSM\FSM.xpr
+# Log file: C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM/vivado.log
+# Journal file: C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/avach/Documents/GitHub/CmpE125/Lab7/FSM/FSM.xpr
+update_compile_order -fileset sources_1
