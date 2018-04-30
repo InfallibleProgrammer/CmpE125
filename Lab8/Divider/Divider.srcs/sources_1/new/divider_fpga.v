@@ -23,7 +23,7 @@
 module divider_fpga(
     input        Go,
     input        rst,
-    input        clk,
+    input        clk100MHz,
     input        BUTTON,
     input  [3:0] Dividend,
     input  [3:0] Divisor,
@@ -41,7 +41,7 @@ module divider_fpga(
     wire [7:0] cs_led;
     wire [7:0] Q_led;
     wire [7:0] R_led;
-    clk_gen clk_g(clk, rst, DONE_USE, clk_5KHz);   
+    clk_gen clk_g(clk100MHz, rst, DONE_USE, clk_5KHz);   
     button_debouncer but(clk_5KHz, BUTTON, debo);
     divider d(
     .Go         (Go),

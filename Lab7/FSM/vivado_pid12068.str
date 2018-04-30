@@ -196,3 +196,9 @@ typeControlKey((HResource) null, "FSM.xdc", 'c'); // cd (w, cj)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 6); // k (j, cj)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_DP.v", 5); // k (j, cj)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_fpga.v", 4); // k (j, cj)
+// Elapsed time: 628 seconds
+selectCodeEditor("FSM_fpga.v", 194, 163); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_fpga.v", 'c'); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 703 MB. GUI used memory: 56 MB. Current time: 4/30/18 10:50:02 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 703 MB. GUI used memory: 55 MB. Current time: 4/30/18 11:20:05 AM PDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.

@@ -127,3 +127,74 @@ file mkdir C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/con
 file mkdir C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/constrs_1/new
 close [ open C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/constrs_1/new/divider.xdc w ]
 add_files -fileset constrs_1 C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/constrs_1/new/divider.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Apr 30 10:39:53 2018] Launched synth_1...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/synth_1/runme.log
+[Mon Apr 30 10:39:53 2018] Launched impl_1...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Apr 30 10:49:29 2018] Launched synth_1...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/synth_1/runme.log
+[Mon Apr 30 10:49:29 2018] Launched impl_1...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Apr 30 11:03:34 2018] Launched synth_1...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/synth_1/runme.log
+[Mon Apr 30 11:03:34 2018] Launched impl_1...
+Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1/runme.log
+set_property top divider [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'divider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj divider_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 10b40396b81a440785836ae3a5a22d9c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot divider_tb_behav xil_defaultlib.divider_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port n [C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/sources_1/new/divider.v:37]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port d2 [C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:37]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port SR [C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:60]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port SL [C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port SR [C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:74]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port UD [C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d2 [C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:107]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d2 [C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/sources_1/new/DP.v:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "divider_tb_behav -key {Behavioral:sim_1:Functional:divider_tb} -tclbatch {divider_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source divider_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'divider_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+There are          28 errors in simulation.

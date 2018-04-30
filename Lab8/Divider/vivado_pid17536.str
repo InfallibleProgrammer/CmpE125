@@ -754,3 +754,539 @@ selectCodeEditor("divider_fpga.v", 145, 143, false, false, false, false, true); 
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 93 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// x (cj): No Implementation Results Available: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // am (cj)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// f (cj): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // x (cj)
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "16", 15); // e (aU, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 12 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// TclEventType: RUN_LAUNCH
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr 30 10:39:53 2018] Launched synth_1... Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/synth_1/runme.log [Mon Apr 30 10:39:53 2018] Launched impl_1... Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 686 MB. GUI used memory: 58 MB. Current time: 4/30/18 10:39:56 AM PDT
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cj): Bitstream Generation Failed: addNotify
+// Elapsed time: 252 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, divider.xdc]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, divider.xdc]", 4, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.v", 0); // k (j, cj)
+selectCodeEditor("divider.v", 218, 202); // cd (w, cj)
+selectCodeEditor("divider.v", 353, 107); // cd (w, cj)
+selectCodeEditor("divider.v", 163, 113); // cd (w, cj)
+selectCodeEditor("divider.v", 163, 112, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider.v", 'c'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 7); // k (j, cj)
+selectCodeEditor("divider.xdc", 498, 194); // cd (w, cj)
+selectCodeEditor("divider.xdc", 498, 194, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("divider.xdc", 490, 213); // cd (w, cj)
+selectCodeEditor("divider.xdc", 490, 213, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("divider.xdc", 494, 225); // cd (w, cj)
+selectCodeEditor("divider.xdc", 494, 225, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("divider.xdc", 601, 237); // cd (w, cj)
+// Elapsed time: 31 seconds
+selectCodeEditor("divider.xdc", 490, 282); // cd (w, cj)
+selectCodeEditor("divider.xdc", 490, 282, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("divider.xdc", 556, 277); // cd (w, cj)
+selectCodeEditor("divider.xdc", 74, 266); // cd (w, cj)
+selectCodeEditor("divider.xdc", 655, 263); // cd (w, cj)
+selectCodeEditor("divider.xdc", 635, 251); // cd (w, cj)
+selectCodeEditor("divider.xdc", 497, 289); // cd (w, cj)
+selectCodeEditor("divider.xdc", 493, 291, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("divider.xdc", 493, 291); // cd (w, cj)
+selectCodeEditor("divider.xdc", 723, 291); // cd (w, cj)
+selectCodeEditor("divider.xdc", 499, 293); // cd (w, cj)
+selectCodeEditor("divider.xdc", 499, 293, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("divider.xdc", 541, 292); // cd (w, cj)
+selectCodeEditor("divider.xdc", 358, 283); // cd (w, cj)
+selectCodeEditor("divider.xdc", 605, 303); // cd (w, cj)
+typeControlKey((HResource) null, "divider.xdc", 'c'); // cd (w, cj)
+selectCodeEditor("divider.xdc", 89, 289); // cd (w, cj)
+selectCodeEditor("divider.xdc", 89, 281); // cd (w, cj)
+typeControlKey((HResource) null, "divider.xdc", 'v'); // cd (w, cj)
+// Elapsed time: 44 seconds
+selectCodeEditor("divider.xdc", 551, 333); // cd (w, cj)
+selectCodeEditor("divider.xdc", 583, 312); // cd (w, cj)
+selectCodeEditor("divider.xdc", 579, 294); // cd (w, cj)
+typeControlKey((HResource) null, "divider.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("divider.xdc", 544, 314); // cd (w, cj)
+selectCodeEditor("divider.xdc", 540, 292); // cd (w, cj)
+selectCodeEditor("divider.xdc", 542, 329); // cd (w, cj)
+selectCodeEditor("divider.xdc", 523, 336); // cd (w, cj)
+selectCodeEditor("divider.xdc", 523, 336, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider.xdc", 'c'); // cd (w, cj)
+selectCodeEditor("divider.xdc", 489, 350); // cd (w, cj)
+selectCodeEditor("divider.xdc", 489, 350, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("divider.xdc", 246, 296); // cd (w, cj)
+selectCodeEditor("divider.xdc", 246, 312); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("divider.xdc", 233, 329); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("divider.xdc", 549, 348); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_fpga.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 7); // k (j, cj)
+selectCodeEditor("divider.xdc", 499, 90); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_to_7seg.v", 2); // k (j, cj)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_mux.v", 3, false, true); // k (j, cj) - Double Click
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1345, 284); // n (o, cj)Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // w
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_fpga.v", 1); // k (j, cj)
+selectCodeEditor("divider_fpga.v", 143, 114); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 135, 114); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 138, 113, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("divider_fpga.v", 138, 113); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 141, 113); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("divider_fpga.v", 254, 105); // cd (w, cj)
+typeControlKey((HResource) null, "divider_fpga.v", 'v'); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 143, 412); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 168, 112); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 168, 112, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider_fpga.v", 'c'); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 135, 415); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 135, 415, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "divider_fpga.v", 'v'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_fpga.v", 1); // k (j, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_fpga.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+selectCodeEditor("divider.xdc", 563, 360); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_fpga.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_fpga.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.v", 0); // k (j, cj)
+selectCodeEditor("divider.v", 127, 59); // cd (w, cj)
+selectCodeEditor("divider.v", 134, 78); // cd (w, cj)
+selectCodeEditor("divider.v", 136, 92); // cd (w, cj)
+selectCodeEditor("divider.v", 136, 111); // cd (w, cj)
+selectCodeEditor("divider.v", 134, 124); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_fpga.v", 1); // k (j, cj)
+selectCodeEditor("divider_fpga.v", 129, 123); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 131, 144); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 131, 163); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 132, 182); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 130, 199); // cd (w, cj)
+selectCodeEditor("divider_fpga.v", 131, 207); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Mon Apr 30 10:49:29 2018] Launched synth_1... Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/synth_1/runme.log [Mon Apr 30 10:49:29 2018] Launched impl_1... Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1/runme.log 
+// bs (cj):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cj): Bitstream Generation Failed: addNotify
+// Elapsed time: 754 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cj)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_fpga.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.xdc", 3); // k (j, cj)
+selectCodeEditor("divider.xdc", 503, 410); // cd (w, cj)
+selectCodeEditor("divider.xdc", 503, 410, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("divider.xdc", 232, 332); // cd (w, cj)
+selectCodeEditor("divider.xdc", 555, 241); // cd (w, cj)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 28 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr 30 11:03:34 2018] Launched synth_1... Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/synth_1/runme.log [Mon Apr 30 11:03:34 2018] Launched impl_1... Run output will be captured here: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 57 MB. Current time: 4/30/18 11:09:59 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 54 MB. Current time: 4/30/18 11:40:45 AM PDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 2243 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.v", 0); // k (j, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, divider_fpga (divider_fpga.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, divider_fpga (divider_fpga.v), d : divider (divider.v)]", 4, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, divider_fpga (divider_fpga.v), d : divider (divider.v)]", 4, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 13, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, divider_fpga (divider_fpga.v), d : divider (divider.v)]", 4, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, divider_fpga (divider_fpga.v), d : divider (divider.v)]", 4, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top divider [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (cj):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'divider_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog --incr --relax -prj divider_tb_vlog.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "divider_tb_behav -key {Behavioral:sim_1:Functional:divider_tb} -tclbatch {divider_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 58 MB. Current time: 4/30/18 11:41:27 AM PDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source divider_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'divider_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e (cj)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 61 MB. Current time: 4/30/18 11:41:34 AM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulation_live_run_all"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run all 
+// Tcl Message: There are          28 errors in simulation. 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 4); // k (j, cj)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 62 MB. Current time: 4/30/18 11:41:41 AM PDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 857, 294); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, error[31:0]]", 10, true, false, false, false, true, false); // a (s, cj) - Popup Trigger - Node
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // Q (cj, Popup.HeavyWeightWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 146, 321); // n (o, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:42:12 AM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 94, 317); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:42:32 AM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:42:33 AM PDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 149, 288); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 152, 288); // n (o, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 60 MB. Current time: 4/30/18 11:42:37 AM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 137, 285); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:42:41 AM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:42:42 AM PDT
+// Elapsed time: 24 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 612, 255); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 624, 276); // n (o, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:43:07 AM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 634, 245); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:43:11 AM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:43:11 AM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:43:12 AM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 343, 293); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:43:15 AM PDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 344, 294); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 74 MB. Current time: 4/30/18 11:43:17 AM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 40 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 450, 110); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:43:57 AM PDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 450, 110); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Divisor[3:0]]", 4, true, false, false, false, true, false); // a (s, cj) - Popup Trigger - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Divisor[3:0]]", 4, true, false, false, false, true, false); // a (s, cj) - Popup Trigger - Node
+selectMenu((HResource) null, "Name"); // Z (ai, cj)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, cj)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, cj)
+selectMenu((HResource) null, "Radix"); // Z (ai, cj)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, cj)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, cj)
+selectMenu((HResource) null, "Name"); // Z (ai, cj)
+selectMenu((HResource) null, "Name"); // Z (ai, cj)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, cj)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, cj)
+selectMenu((HResource) null, "Radix"); // Z (ai, cj)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // Q (cj)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Elapsed time: 12 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 414, 288); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:44:18 AM PDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 413, 282); // n (o, cj)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:44:27 AM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:44:30 AM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 4/30/18 11:44:32 AM PDT
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 156 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "divider_tb.v", 5); // k (j, cj)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton (A, G)
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 2*"); // w

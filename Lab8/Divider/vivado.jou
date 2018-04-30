@@ -35,3 +35,21 @@ file mkdir C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/con
 file mkdir C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/constrs_1/new
 close [ open C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/constrs_1/new/divider.xdc w ]
 add_files -fileset constrs_1 C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/constrs_1/new/divider.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top divider [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source divider_tb.tcl
+run all
