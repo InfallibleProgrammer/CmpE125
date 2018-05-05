@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1525111414">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1525127458">
   <File Type="PA-TCL" Name="divider_fpga.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="divider_fpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="divider_fpga_reports.tcl"/>
   <File Type="RDS-RDS" Name="divider_fpga.vds"/>
   <File Type="RDS-UTIL" Name="divider_fpga_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="divider_fpga_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="divider_fpga.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="divider_fpga_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="divider_fpga_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/CU.v">
@@ -112,7 +109,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="divider_fpga"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Mon Apr 30 11:07:25 2018
-| Host             : DESKTOP-3MQQUTJ running 64-bit major release  (build 9200)
+| Date             : Mon Apr 30 15:33:35 2018
+| Host             : DESKTOP-OT07JBV running 64-bit major release  (build 9200)
 | Command          : report_power -file divider_fpga_power_routed.rpt -pb divider_fpga_power_summary_routed.pb -rpx divider_fpga_power_routed.rpx
 | Design           : divider_fpga
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.100        |
+| Total On-Chip Power (W)  | 0.132        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.003        |
+| Dynamic (W)              | 0.035        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      134 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       48 |     63400 |            0.08 |
-|   Register     |    <0.001 |       69 |    126800 |            0.05 |
+| Slice Logic    |    <0.001 |      173 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       71 |     63400 |            0.11 |
+|   Register     |    <0.001 |       72 |    126800 |            0.06 |
 |   CARRY4       |    <0.001 |        8 |     15850 |            0.05 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |      116 |       --- |             --- |
-| I/O            |     0.002 |       13 |       210 |            6.19 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+|   F7/F8 Muxes  |     0.000 |        1 |     63400 |           <0.01 |
+| Signals        |    <0.001 |      147 |       --- |             --- |
+| I/O            |     0.033 |       30 |       210 |           14.29 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.100 |          |           |                 |
+| Total          |     0.132 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
-| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
+| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
+| Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
+| Vcco33    |       3.300 |     0.013 |       0.009 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,15 +141,16 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| divider_fpga    |     0.003 |
+| divider_fpga    |     0.035 |
+|   LED           |    <0.001 |
 |   but           |     0.000 |
 |   clk_g         |    <0.001 |
 |   d             |    <0.001 |
 |     control     |    <0.001 |
 |     data_path   |    <0.001 |
 |       R_shifter |    <0.001 |
-|       X_shifter |     0.000 |
-|       Y_shifter |     0.000 |
+|       X_shifter |    <0.001 |
+|       Y_shifter |    <0.001 |
 |       count     |    <0.001 |
 +-----------------+-----------+
 

@@ -24,6 +24,9 @@ set_property -dict {PACKAGE_PIN R13 IOSTANDARD LVCMOS33} [get_ports {Divisor[3]}
 #Done Output
 set_property -dict {PACKAGE_PIN V11 IOSTANDARD LVCMOS33} [get_ports {Done}];
 
+#Error output
+set_property -dict {PACKAGE_PIN V12 IOSTANDARD LVCMOS33} [get_ports {Err}];
+
 ##For CS and Out 
 set_property -dict {PACKAGE_PIN K13 IOSTANDARD LVCMOS33} [get_ports {LEDOUT[0]}];
 set_property -dict {PACKAGE_PIN K16 IOSTANDARD LVCMOS33} [get_ports {LEDOUT[1]}];

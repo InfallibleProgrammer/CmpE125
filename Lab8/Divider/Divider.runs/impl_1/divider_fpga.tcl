@@ -65,15 +65,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.cache/wt [current_project]
-  set_property parent.project_path C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.xpr [current_project]
-  set_property ip_output_repo C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/bcgni/Pictures/125Git/CmpE125/Lab8/Divider/Divider.cache/wt [current_project]
+  set_property parent.project_path C:/Users/bcgni/Pictures/125Git/CmpE125/Lab8/Divider/Divider.xpr [current_project]
+  set_property ip_output_repo C:/Users/bcgni/Pictures/125Git/CmpE125/Lab8/Divider/Divider.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/synth_1/divider_fpga.dcp
-  read_xdc C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.srcs/constrs_1/new/divider.xdc
+  add_files -quiet C:/Users/bcgni/Pictures/125Git/CmpE125/Lab8/Divider/Divider.runs/synth_1/divider_fpga.dcp
+  read_xdc C:/Users/bcgni/Pictures/125Git/CmpE125/Lab8/Divider/Divider.srcs/constrs_1/new/divider.xdc
   link_design -top divider_fpga -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

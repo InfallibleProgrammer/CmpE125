@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Apr 30 11:05:49 2018
-| Host         : DESKTOP-3MQQUTJ running 64-bit major release  (build 9200)
+| Date         : Mon Apr 30 15:32:48 2018
+| Host         : DESKTOP-OT07JBV running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file divider_fpga_control_sets_placed.rpt
 | Design       : divider_fpga
 | Device       : xc7a100t
@@ -23,7 +23,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |     6 |
-| Unused register locations in slices containing registers |    27 |
+| Unused register locations in slices containing registers |    24 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,9 +33,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              17 |            4 |
-| No           | No                    | Yes                    |               6 |            2 |
-| No           | Yes                   | No                     |              33 |            9 |
+| No           | No                    | No                     |              20 |            6 |
+| No           | No                    | Yes                    |               6 |            3 |
+| No           | Yes                   | No                     |              33 |           10 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |              13 |            6 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -45,16 +45,16 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------+-------------------------+------------------+------------------+----------------+
-|      Clock Signal     |      Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+-----------------------+-------------------------+------------------+------------------+----------------+
-|  but/CLK              | d/control/E[0]          | rst_IBUF         |                1 |              4 |
-|  but/CLK              | d/control/Q_reg[0]_1[0] | rst_IBUF         |                2 |              4 |
-|  but/CLK              | d/control/Q_reg[0]_0[0] | rst_IBUF         |                3 |              5 |
-|  but/CLK              |                         | rst_IBUF         |                2 |              6 |
-|  clk_g/history_reg[0] |                         |                  |                4 |             17 |
-|  clk100MHz_IBUF_BUFG  |                         | rst_IBUF         |                9 |             33 |
-+-----------------------+-------------------------+------------------+------------------+----------------+
++----------------------+-------------------------+------------------+------------------+----------------+
+|     Clock Signal     |      Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------+-------------------------+------------------+------------------+----------------+
+|  but/CLK             | d/control/Q_reg[0]_0[0] | rst_IBUF         |                2 |              4 |
+|  but/CLK             | d/control/E[0]          | rst_IBUF         |                1 |              4 |
+|  but/CLK             | d/control/Q_reg[0][0]   | rst_IBUF         |                3 |              5 |
+|  but/CLK             |                         | rst_IBUF         |                3 |              6 |
+|  clk_g/clk           |                         |                  |                6 |             20 |
+|  clk100MHz_IBUF_BUFG |                         | rst_IBUF         |               10 |             33 |
++----------------------+-------------------------+------------------+------------------+----------------+
 
 
 +--------+-----------------------+

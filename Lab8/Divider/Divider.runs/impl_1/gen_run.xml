@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1525111414">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1525127458">
   <File Type="PWROPT-DCP" Name="divider_fpga_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="divider_fpga_power_routed.rpt"/>
   <File Type="PA-TCL" Name="divider_fpga.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="divider_fpga_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="divider_fpga_reports.tcl"/>
   <File Type="BG-DRC" Name="divider_fpga.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="divider_fpga_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="divider_fpga_timing_summary_init.rpt"/>
-  <File Type="OPT-HWDEF" Name="divider_fpga.hwdef"/>
   <File Type="OPT-DCP" Name="divider_fpga_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="divider_fpga.hwdef"/>
   <File Type="OPT-DRC" Name="divider_fpga_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="divider_fpga_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="divider_fpga_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="divider_fpga_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="divider_fpga_placed.dcp"/>
   <File Type="PLACE-IO" Name="divider_fpga_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="divider_fpga_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="divider_fpga_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="divider_fpga_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="divider_fpga_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="divider_fpga_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="divider_fpga_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="divider_fpga_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="divider_fpga_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="divider_fpga_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="divider_fpga_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="divider_fpga_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="divider_fpga.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="divider_fpga_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="divider_fpga_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="divider_fpga_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="divider_fpga_routed_bb.dcp"/>
@@ -48,18 +37,13 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="divider_fpga_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="divider_fpga_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="divider_fpga_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="divider_fpga_incremental_reuse_routed.rpt"/>
   <File Type="RDI-RDI" Name="divider_fpga.vdi"/>
   <File Type="ROUTE-CLK" Name="divider_fpga_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="divider_fpga_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="divider_fpga_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="divider_fpga_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="divider_fpga_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="divider_fpga_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="divider_fpga.nky"/>
   <File Type="BITSTR-BMM" Name="divider_fpga_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="divider_fpga.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="divider_fpga.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="divider_fpga.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -166,7 +150,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="divider_fpga"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

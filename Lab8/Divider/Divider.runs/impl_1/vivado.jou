@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Apr 30 11:04:53 2018
-# Process ID: 22952
-# Current directory: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1
+# Start of session at: Mon Apr 30 15:32:08 2018
+# Process ID: 8592
+# Current directory: C:/Users/bcgni/Pictures/125Git/CmpE125/Lab8/Divider/Divider.runs/impl_1
 # Command line: vivado.exe -log divider_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source divider_fpga.tcl -notrace
-# Log file: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1/divider_fpga.vdi
-# Journal file: C:/Users/avach/Documents/GitHub/CmpE125/Lab8/Divider/Divider.runs/impl_1\vivado.jou
+# Log file: C:/Users/bcgni/Pictures/125Git/CmpE125/Lab8/Divider/Divider.runs/impl_1/divider_fpga.vdi
+# Journal file: C:/Users/bcgni/Pictures/125Git/CmpE125/Lab8/Divider/Divider.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source divider_fpga.tcl -notrace

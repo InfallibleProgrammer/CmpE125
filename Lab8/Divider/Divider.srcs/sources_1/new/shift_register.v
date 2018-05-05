@@ -26,8 +26,8 @@ module shift_register #(parameter WIDTH = 4)
             end
             else if (SR) 
             begin
-                        Q[WIDTH - 1] = LeftIn;
                         Q[WIDTH - 2:0] = Q[WIDTH - 1:1];
+                        Q[WIDTH - 1] = LeftIn;
             end
             else        Q = Q;
         end
