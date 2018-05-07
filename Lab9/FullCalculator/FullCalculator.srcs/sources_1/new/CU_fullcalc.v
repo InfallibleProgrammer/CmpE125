@@ -18,13 +18,14 @@ module CU_fullcalc(
     output reg       Go_DIV,
     output reg       Sel_H,
     output reg       Sel_L,
+    output reg       Sel_squared,
     output reg       En_Out_H,
     output reg       En_Out_L,
     output reg [3:0] CS 
     );
     
     reg [3:0] NS;
-    reg [13:0] out_sig;
+    reg [12:0] out_sig;
     
     //state register
     always @ (posedge clk, posedge rst)
@@ -36,6 +37,8 @@ module CU_fullcalc(
     //output control
     always @ (out_sig)
     begin
+        {En_F, En_X, En_Y, Go_Calc, Op_Calc, Go_DIV, Sel_H, Sel_L,
+         Sel_squared, En_Out_H, En_Out_L, Err, Done} = out_sig;
     end
 
     //state transtions

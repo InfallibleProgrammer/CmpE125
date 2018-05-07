@@ -12,6 +12,7 @@ module DP_fullcalc(
     input Go_DIV,
     input Sel_H,
     input Sel_L,
+    input Sel_squared,
     input En_Out_H,
     input En_Out_L,
     output [3:0] Out_Ha,
